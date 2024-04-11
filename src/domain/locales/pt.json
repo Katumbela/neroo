@@ -1,0 +1,25 @@
+{
+  "welcomeMessage": "Bem-vindo ao meu website!",
+  "aboutPageTitle": "Sobre Nós",
+  "servicesPageTitle": "Serviços",
+  "latestWorksPageTitle": "Últimos Trabalhos",
+  "testimonialsPageTitle": "Depoimentos",
+  "contactPageTitle": "Contate-nos",
+  "hello": "Olá",
+  "goodbye": "Adeus",
+  "titleHero": "Agência de Marketing Digital Criativo",
+  "descHero": "Conectamos marcas com seu público-alvo por meio de estratégias relevantes e conteúdo em canais digitais.",
+  "buttonHeroText": "Contate-nos",
+  "companiesTitle": "Destaque",
+  "companiesSubTitle": "Nossas Certificações",
+  "expertise": {
+    "pageTitle": "Nossa Experiência em Marketing Digital",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur labore beatae ex fugiat ut recusandae repellendus totam sapiente quasi tempora, alias exercitationem quo, quas ad expedita nemo officia laboriosam quia.",
+    "seo": "Search Engine Optimization",
+    "websiteDesign": "Website design & development",
+    "videoEditing": "Video editing & Production",
+    "contentWriting": "Content Writing",
+    "socialMediaMarketing": "Social media Marketing",
+    "payPerClick": "Pay per click (PPC)"
+  }
+}
