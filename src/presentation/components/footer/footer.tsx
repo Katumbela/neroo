@@ -1,8 +1,6 @@
 import { motion } from "framer-motion";
 import { bg, regularIcons } from "../../../utils/imagesExporter";
 import { useTranslation } from "react-i18next";
-import { BsTelephoneFill } from "react-icons/bs";
-import { FaSatellite } from "react-icons/fa";
 import { Overlay } from "../overlay/overlay";
 
 export function Footer() {
