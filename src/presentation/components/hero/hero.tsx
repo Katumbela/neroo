@@ -7,7 +7,7 @@ export function Hero() {
   const { t } = useTranslation();
 
   return (
-    <div className="h-[655px] grid items-center xl:h-[720px]">
+    <div className="h-[600px] grid items-center 2xl:h-[820px]">
       <div className="flex">
         <motion.div className="grid items-center w-full">
           <div>

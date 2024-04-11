@@ -12,7 +12,7 @@ const App: React.FC = () => {
     // Simulação de carregamento assíncrono
     setTimeout(() => {
       setIsLoading(false); // Após o carregamento, define isLoading como false
-    }, 4000);
+    }, 5000);
   }, []);
 
   return (
