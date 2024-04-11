@@ -29,14 +29,15 @@ export function Hero() {
               {t("descHero")}
             </motion.p>
             <br />
-            <motion.button
+            <motion.a
+              href="/contact"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 2 }}
               className="mt-4 click btn-neroo-lg"
             >
               {t("buttonHeroText")}
-            </motion.button>
+            </motion.a>
           </div>
         </motion.div>
         <motion.div className="relative w-full">

@@ -2,6 +2,7 @@
 import { useTranslation } from "react-i18next";
 import logo from "../../../assets/imgs/logo design 1.jpg";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -19,9 +20,9 @@ export function NavBar() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <div className="my-auto">
+        <Link to={'/'} className="my-auto">
           <motion.img src={logo} />
-        </div>
+        </Link>
         <div className="flex gap-6 my-auto">
           <motion.a
             variants={containerVariants}
@@ -57,9 +58,9 @@ export function NavBar() {
           </motion.a>
         </div>
         <div className="flex">
-          <button className="px-5 py-2 font-semibold bg-primary rounded-[80px] hover:bg-primary/90 click">
+          <a href={'/contact'} className="px-5 py-2 font-semibold bg-primary rounded-[80px] hover:bg-primary/90 click">
             {t("contactPageTitle")}
-          </button>
+          </a>
         </div>
       </motion.div>
     </>
