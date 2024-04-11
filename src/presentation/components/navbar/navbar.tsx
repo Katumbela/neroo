@@ -57,7 +57,7 @@ export function NavBar() {
           </motion.a>
         </div>
         <div className="flex">
-          <button className="px-5 py-2 font-semibold bg-primary rounded-[80px] hover:bg-primary/90 active:scale-95 transition-all">
+          <button className="px-5 py-2 font-semibold bg-primary rounded-[80px] hover:bg-primary/90 click">
             {t("contactPageTitle")}
           </button>
         </div>

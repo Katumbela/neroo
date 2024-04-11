@@ -6,12 +6,14 @@ import {
   Expertise,
   FloatingBalls,
   Hero,
+  LatestWorks,
   NavBar,
+  Testimonials,
   Why,
 } from "../../components";
+import { Footer } from "../../components/footer/footer";
 
 export function home() {
-  //const { t } = useTranslation();
 
   return (
     <div className="container relative">
@@ -21,6 +23,9 @@ export function home() {
       <Companies />
       <Expertise />
       <Why />
+      <LatestWorks />
+      <Testimonials />
+      <Footer />
     </div>
   );
 }

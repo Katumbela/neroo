@@ -26,5 +26,23 @@
   "why": {
     "title": "Why should you choose NEROO",
     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro eum nisi quo similique, vel mollitia quisquam repellendus harum at eius excepturi consequuntur corrupti officiis repellat. Sapiente ipsam reprehenderit consequuntur maiores."
+  },
+  "latestWorks": {
+    "title": "Our Latest Works",
+    "viewProject": "View project"
+  },
+  "dummyCard": {
+    "first":  {
+      "title": "Card title card first",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro eum nisi quo similique, vel mollitia quisquam repellendus harum at eius excepturi consequuntur corrupti officiis repellat. Sapiente ipsam reprehenderit consequuntur maiores."
+      },
+    "second":  {
+      "title": "Card title second card bla bla",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro eum nisi quo similique, vel mollitia quisquam repellendus harum at eius excepturi consequuntur corrupti officiis repellat. Sapiente ipsam reprehenderit consequuntur maiores."
+      },
+    "third":  {
+      "title": "Card title card third",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro eum nisi quo similique, vel mollitia quisquam repellendus harum at eius excepturi consequuntur corrupti officiis repellat. Sapiente ipsam reprehenderit consequuntur maiores."
+      }
   }
 }

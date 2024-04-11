@@ -53,3 +53,43 @@
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+
+.testimonials-container {
+  overflow: hidden;
+}
+
+.testimonials-carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.testimonial {
+  min-width: 100%;
+}
+
+.active {
+  display: inline-block;
+}
+
+.prev-btn,
+.next-btn {
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #888;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.active-dot {
+  background-color: #333;
+}

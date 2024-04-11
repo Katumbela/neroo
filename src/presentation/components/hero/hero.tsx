@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import bgHero from "../../../assets/bg/bg-hero.png";
 import { useTranslation } from "react-i18next";
+import { Overlay } from "../overlay/overlay";
 
 export function Hero() {
   const { t } = useTranslation();
@@ -32,13 +33,14 @@ export function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 2 }}
-              className="mt-4 btn-neroo-lg"
+              className="mt-4 click btn-neroo-lg"
             >
               {t("buttonHeroText")}
             </motion.button>
           </div>
         </motion.div>
-        <motion.div className="w-full">
+        <motion.div className="relative w-full">
+          <Overlay />
           <motion.img
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
