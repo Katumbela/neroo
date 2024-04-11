@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import "./index.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { home } from "./presentation/pages";
+import { Home } from "./presentation/pages";
 import { Preloader } from "./presentation/components";
 
 const App: React.FC = () => {
@@ -18,7 +18,7 @@ const App: React.FC = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" Component={isLoading ? Preloader : home} />
+        <Route path="/" Component={isLoading ? Preloader : Home} />
       </Routes>
     </BrowserRouter>
   );

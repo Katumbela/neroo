@@ -13,7 +13,7 @@ import {
 } from "../../components";
 import { Footer } from "../../components/footer/footer";
 
-export function home() {
+export function Home() {
 
   return (
     <div className="container relative">
