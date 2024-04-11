@@ -58,9 +58,9 @@ export function NavBar() {
           </motion.a>
         </div>
         <div className="flex">
-          <a href={'/contact'} className="px-5 py-2 font-semibold bg-primary rounded-[80px] hover:bg-primary/90 click">
+          <Link to={'/contact'} className="px-5 py-2 font-semibold bg-primary rounded-[80px] hover:bg-primary/90 click">
             {t("contactPageTitle")}
-          </a>
+          </Link>
         </div>
       </motion.div>
     </>

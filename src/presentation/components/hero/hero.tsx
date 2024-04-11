@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import bgHero from "../../../assets/bg/bg-hero.png";
 import { useTranslation } from "react-i18next";
 import { Overlay } from "../overlay/overlay";
+import { Link } from "react-router-dom";
 
 export function Hero() {
   const { t } = useTranslation();
@@ -29,15 +30,16 @@ export function Hero() {
               {t("descHero")}
             </motion.p>
             <br />
-            <motion.a
-              href="/contact"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 2 }}
-              className="mt-4 click btn-neroo-lg"
-            >
-              {t("buttonHeroText")}
-            </motion.a>
+            <Link to='/contact'>
+              <motion.button
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 2 }}
+                className="mt-4 click btn-neroo-lg"
+              >
+                {t("buttonHeroText")}
+              </motion.button>
+            </Link>
           </div>
         </motion.div>
         <motion.div className="relative w-full">
