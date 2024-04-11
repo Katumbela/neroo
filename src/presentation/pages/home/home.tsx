@@ -7,6 +7,7 @@ import {
   FloatingBalls,
   Hero,
   NavBar,
+  Why,
 } from "../../components";
 
 export function home() {
@@ -19,6 +20,7 @@ export function home() {
       <Hero />
       <Companies />
       <Expertise />
+      <Why />
     </div>
   );
 }

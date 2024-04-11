@@ -8,6 +8,8 @@ import content from "../assets/icons/regular/Icon (3).png";
 import social from "../assets/icons/regular/Icon (4).png";
 import pay from "../assets/icons/regular/Icon (5).png";
 import search from "../assets/icons/regular/Icon.png";
+import bgHero from "../assets/bg/bg-hero.png";
+import bgSection from "../assets/bg/Section Image.png";
 
 export const brands = {
   allianz,
@@ -16,13 +18,16 @@ export const brands = {
   nyt,
 };
 
-
-
 export const regularIcons: Record<string, string> = {
   video,
   content,
   social,
   search,
   pay,
-  web
+  web,
+};
+
+export const bg = {
+  bgHero,
+  bgSection,
 };

@@ -5,6 +5,7 @@
   "latestWorksPageTitle": "Latest Works",
   "testimonialsPageTitle": "Testimonials",
   "contactPageTitle": "Contact Us",
+  "contactText": "Contact Us",
   "hello": "Hello",
   "goodbye": "Goodbye",
   "titleHero": "Creative Digital Marketing Agency",
@@ -21,5 +22,9 @@
     "contentWriting": "Content Writing",
     "socialMediaMarketing": "Social media Marketing",
     "payPerClick": "Pay per click (PPC)"
+  },
+  "why": {
+    "title": "Why should you choose NEROO",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro eum nisi quo similique, vel mollitia quisquam repellendus harum at eius excepturi consequuntur corrupti officiis repellat. Sapiente ipsam reprehenderit consequuntur maiores."
   }
 }
