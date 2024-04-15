@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import logo from "../../../assets/imgs/logo design 1.jpg";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { FaTimes } from "react-icons/fa";
 
 const containerVariants = {
   hidden: { opacity: 0, y: -50 },
@@ -19,7 +20,60 @@ export function NavBar() {
 
   return (
     <>
-      <div className="relative">
+      <motion.div
+        className="z-50 hidden md:flex justify-between py-5"
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        <Link to={"/"} className="my-auto">
+          <motion.img src={logo} />
+        </Link>
+        <div className="flex gap-6 my-auto">
+          <motion.a
+            variants={containerVariants}
+            initial="hidden"
+            className="text-white hover-anim"
+            animate="visible"
+          >
+            {t("aboutPageTitle")}
+          </motion.a>
+          <motion.a
+            variants={containerVariants}
+            initial="hidden"
+            className="text-white hover-anim"
+            animate="visible"
+          >
+            {t("servicesPageTitle")}
+          </motion.a>
+          <motion.a
+            variants={containerVariants}
+            initial="hidden"
+            className="text-white hover-anim"
+            animate="visible"
+          >
+            {t("latestWorksPageTitle")}
+          </motion.a>
+          <motion.a
+            variants={containerVariants}
+            initial="hidden"
+            className="text-white hover-anim"
+            animate="visible"
+          >
+            {t("testimonialsPageTitle")}
+          </motion.a>
+        </div>
+        <div className="flex">
+          <Link
+            to={"/contact"}
+            className="px-5 py-2 font-semibold bg-primary rounded-[80px] hover:bg-primary/90 click"
+          >
+            {t("contactPageTitle")}
+          </Link>
+        </div>
+      </motion.div>
+
+      <div className="relative md:hidden">
         <motion.div
           className="fixed top-0 left-0 z-50 w-full h-full opacity-50 h-"
           style={{ pointerEvents: isOpen ? "auto" : "none" }}
@@ -34,16 +88,22 @@ export function NavBar() {
           animate={{ opacity: isOpen ? 1 : 0, y: isOpen ? 0 : -50 }}
           transition={{ duration: 0.5 }}
         >
-          <Link to={"/"} className="hidden my-auto md:blockz">
+          <Link to={"/"} className="hidden my-auto md:block">
             <motion.img src={logo} />
           </Link>
           <div
-            className={`flex  flex-col gap-6 my-auto md:flex-row md:gap-6 ${
+            className={`flex fixed flex-col gap-6 my-auto md:flex-row md:gap-6 ${
               isOpen
                 ? "py-[3rem] px-7 visible h-screen fixed -top-1 left-0 -bottom-1 right-0 bg-black z-10"
                 : "hidden"
             }`}
           >
+            <button
+              onClick={toggleMenu}
+              className="text-white -right-[90%] text-4xl absolute hover-anim"
+            >
+              <FaTimes />
+            </button>
             <motion.a
               variants={containerVariants}
               initial="hidden"
@@ -76,11 +136,9 @@ export function NavBar() {
             >
               {t("testimonialsPageTitle")}
             </motion.a>
-          </div>
-          <div className="flex">
             <Link
               to={"/contact"}
-              className="px-5 py-2 font-semibold hidden md:block bg-primary rounded-[80px] hover:bg-primary/90 click"
+              className="px-5 py-2 mt-auto text-center font-semibold  md:block bg-primary rounded-[80px] hover:bg-primary/90 click"
             >
               {t("contactPageTitle")}
             </Link>
