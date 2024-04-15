@@ -8,7 +8,7 @@
 }
 
 .card-company {
-    @apply bg-[#181818] h-[100px]  lg:h-[120px] w-[230px] lg:w-full grid items-center place-content-center rounded-lg border border-white/10 hover:border-white/40 transition-all
+    @apply bg-[#181818] h-[100px]  lg:h-[120px] w-full md:w-[230px] lg:w-full grid items-center place-content-center rounded-lg border border-white/10 hover:border-white/40 transition-all
 }
 
 .card-expertise {

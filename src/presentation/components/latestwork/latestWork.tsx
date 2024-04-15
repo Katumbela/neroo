@@ -29,16 +29,16 @@ export function LatestWorks() {
 
   return (
     <motion.div
-      className="my-[0%]"
+      className="my-8 md:my-16 lg:my-24"
       initial={{ y: 70 }}
       transition={{ duration: 0.6 }}
       whileInView={{ y: 0 }}
     >
-      <h1 className="text-3xl font-semibold text-white lg:text-5xl">
+      <h1 className="text-2xl font-semibold text-white md:text-3xl lg:text-5xl">
         {t("latestWorks.title")}
       </h1>
       <br />
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {dummyCards.map((card) => (
           <motion.div
             key={card.id}
@@ -48,7 +48,7 @@ export function LatestWorks() {
             transition={{ duration: 0.3 }}
           >
             <div
-              className="h-[250px] 2xl:h-[320px] bg-cover"
+              className="h-[250px] md:h-[320px] bg-cover"
               style={{
                 background: `url('${card.img}')`,
                 backgroundSize: "cover",
@@ -56,15 +56,15 @@ export function LatestWorks() {
               }}
             ></div>
             <motion.div className="absolute inset-0 flex justify-center transition-opacity duration-300 bg-black bg-opacity-50 opacity-0 hover:opacity-100">
-              <button className="px-7 click py-2 h-[3rem] mt-[6.5rem] 2xl:mt-[8rem] text-xl font-semibold text-white border border-white rounded-[80px] bg-primary">
+              <button className="px-4 md:px-7 click py-2 md:py-4 h-[2.5rem] md:h-[3rem] mt-[6.5rem] md:mt-[8rem] text-base md:text-xl font-semibold text-white border border-white rounded-[80px] bg-primary">
                 {t("latestWorks.viewProject")}
               </button>
             </motion.div>
             <div className="py-4">
-              <h2 className="text-3xl font-semibold text-white ">
+              <h2 className="text-xl font-semibold text-white md:text-2xl">
                 {card.title}
               </h2>
-              <p className="text-md text-secondary">
+              <p className="text-sm md:text-md text-secondary">
                 {abbreviateText(card.description, 90)}
               </p>
             </div>
