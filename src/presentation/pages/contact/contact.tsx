@@ -39,7 +39,7 @@ export function Contact() {
             <TextArea placeholder={t("contact.form.description")} />
           </div>
           <div className="mt-8 btns">
-            <button className="flex mx-auto md:mx-0 btn-neroo-lg">
+            <button className="flex mx-auto click md:mx-0 btn-neroo-lg">
             {t("contact.sendBtn")} <BsSend className="my-auto ms-2" />{" "}
             </button>
           </div>

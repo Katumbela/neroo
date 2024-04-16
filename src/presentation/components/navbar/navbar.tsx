@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import logo from "../../../assets/imgs/logo design 1.jpg";
 import logoSM from "../../../assets/imgs/neroo (1).jpeg";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
 
 const containerVariants = {
@@ -144,12 +144,12 @@ export function NavBar() {
             >
               {t("testimonialsPageTitle")}
             </motion.a>
-            <Link
+            <NavLink
               to={"/contact"}
-              className="px-5 py-2 mt-auto text-center font-semibold  md:block bg-primary rounded-[80px] hover:bg-primary/90 click"
+              className="px-5 z-80 py-2 mt-auto text-center font-semibold  md:block bg-primary rounded-[80px] hover:bg-primary/90 click"
             >
               {t("contactPageTitle")}
-            </Link>
+            </NavLink>
           </div>
         </motion.div>
       </div>
