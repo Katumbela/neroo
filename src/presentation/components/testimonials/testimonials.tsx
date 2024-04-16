@@ -8,8 +8,8 @@ export function Testimonials() {
     dots: true,
     infinite: true,
     autoplay: false,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 3,
+    slidesToScroll: 3,
     initialSlide: 0,
     responsive: [
       {
@@ -75,7 +75,7 @@ export function Testimonials() {
   ];
 
   return (
-    <div className="py-16 my-16 slider-container">
+    <div className="px-6 py-16 my-16 md:px-1 slider-container">
       <Slider {...settings}>
         {testimonials.map((testimonial) => (
           <div key={testimonial.id} className="mx-[2rem]">
@@ -91,7 +91,7 @@ export function Testimonials() {
                   <p className="text-secondary">{testimonial.title}</p>
                 </div>
               </div>
-              <p className="text-secondary">{testimonial.content}</p>
+              <p className="mt-3 text-secondary">{testimonial.content}</p>
             </div>
           </div>
         ))}

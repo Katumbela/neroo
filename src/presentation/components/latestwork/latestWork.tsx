@@ -29,7 +29,7 @@ export function LatestWorks() {
 
   return (
     <motion.div
-      className="my-8 md:my-16 lg:my-24"
+      className="px-2 my-8 m0d:px- md:my-16 lg:my-24"
       initial={{ y: 70 }}
       transition={{ duration: 0.6 }}
       whileInView={{ y: 0 }}
@@ -38,11 +38,11 @@ export function LatestWorks() {
         {t("latestWorks.title")}
       </h1>
       <br />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
         {dummyCards.map((card) => (
           <motion.div
             key={card.id}
-            className="relative overflow-hidden"
+            className="relative mt-[2rem] overflow-hidden"
             whileHover={{ scale: 1.02 }}
             initial={{ scale: 1 }}
             transition={{ duration: 0.3 }}

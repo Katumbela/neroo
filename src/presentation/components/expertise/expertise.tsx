@@ -11,7 +11,7 @@ export function Expertise() {
       transition={{ duration: 0.5, delay: 0.2 }}
       whileInView={{ opacity: 1, transition: { staggerDirection: 0.3 } }}
     >
-      <div className="flex gap-6">
+      <div className="flex flex-col-reverse gap-6 md:flex-row">
         <div className="grid w-full grid-cols-2 gap-4">
           <motion.div
             transition={{ duration: 0.1 }}
@@ -19,7 +19,7 @@ export function Expertise() {
             whileInView={{ opacity: 1, x: 0 }}
             className="card-expertise"
           >
-            <img src={regularIcons.search} className="h-[4em]" alt="" />
+            <img src={regularIcons.search} className="h-[3em] md:h-[4em]" alt="" />
             <h2 className="text-card-expertise">{t("expertise.seo")}</h2>
           </motion.div>
           <motion.div
@@ -28,8 +28,10 @@ export function Expertise() {
             whileInView={{ opacity: 1, x: 0 }}
             className="card-expertise"
           >
-            <img src={regularIcons.web} className="h-[4em]" alt="" />
-            <h2 className="text-card-expertise">{t("expertise.websiteDesign")}</h2>
+            <img src={regularIcons.web} className="h-[3em] md:h-[4em]" alt="" />
+            <h2 className="text-card-expertise">
+              {t("expertise.websiteDesign")}
+            </h2>
           </motion.div>
           <motion.div
             transition={{ duration: 0.3, delay: 0.2 }}
@@ -37,8 +39,10 @@ export function Expertise() {
             whileInView={{ opacity: 1, x: 0 }}
             className="card-expertise"
           >
-            <img src={regularIcons.video} className="h-[4em]" alt="" />
-            <h2 className="text-card-expertise">{t("expertise.videoEditing")}</h2>
+            <img src={regularIcons.video} className="h-[3em] md:h-[4em]" alt="" />
+            <h2 className="text-card-expertise">
+              {t("expertise.videoEditing")}
+            </h2>
           </motion.div>
           <motion.div
             transition={{ duration: 0.4, delay: 0.3 }}
@@ -46,20 +50,23 @@ export function Expertise() {
             whileInView={{ opacity: 1, x: 0 }}
             className="card-expertise"
           >
-            <img src={regularIcons.content} className="h-[4em]" alt="" />
-            <h2 className="text-card-expertise">{t("expertise.contentWriting")}</h2>
+            <img src={regularIcons.content} className="h-[3em] md:h-[4em]" alt="" />
+            <h2 className="text-card-expertise">
+              {t("expertise.contentWriting")}
+            </h2>
           </motion.div>
         </div>
-        <div className="grid w-full grid-rows-2">
+        <div className="w-full md:grid md:grid-rows-2">
           <motion.div
             transition={{ duration: 0.4, delay: 0.3 }}
             initial={{ opacity: 0.1, y: -50 }}
             whileInView={{ opacity: 1, y: 0 }}
+            className="w-full px-2 mx-auto text-center"
           >
-            <h1 className="text-3xl font-semibold text-white lg:text-6xl">
+            <h1 className="text-3xl font-bold text-white md:font-semibold lg:text-6xl">
               {t("expertise.pageTitle")}
             </h1>
-            <p className="mt-6 text-md 2xl:text-xl text-secondary">
+            <p className="mt-6 mb-14 md:mb-1 text-md 2xl:text-xl text-secondary">
               {t("expertise.description")}
             </p>
           </motion.div>
@@ -71,7 +78,9 @@ export function Expertise() {
               className="card-expertise"
             >
               <img src={regularIcons.social} className="h-[4em]" alt="" />
-              <h2 className="text-card-expertise">{t("expertise.socialMediaMarketing")}</h2>
+              <h2 className="text-card-expertise">
+                {t("expertise.socialMediaMarketing")}
+              </h2>
             </motion.div>
             <motion.div
               transition={{ duration: 0.4, delay: 0.3 }}
@@ -80,7 +89,9 @@ export function Expertise() {
               className="card-expertise"
             >
               <img src={regularIcons.pay} className="h-[4em]" alt="" />
-              <h2 className="text-card-expertise">{t("expertise.payPerClick")}</h2>
+              <h2 className="text-card-expertise">
+                {t("expertise.payPerClick")}
+              </h2>
             </motion.div>
           </div>
         </div>

@@ -1,24 +1,23 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 .btn-neroo-lg {
-    @apply bg-primary px-7 py-3 rounded-[80px] font-bold hover:bg-primary/80 transition-all
+  @apply bg-primary px-7 py-3 rounded-[80px] font-bold hover:bg-primary/80 transition-all;
 }
 
 .card-company {
-    @apply bg-[#181818] h-[100px]  lg:h-[120px] w-full md:w-[230px] lg:w-full grid items-center place-content-center rounded-lg border border-white/10 hover:border-white/40 transition-all
+  @apply bg-[#181818] h-[100px]  lg:h-[120px] w-full md:w-[230px] lg:w-full grid items-center place-content-center rounded-lg border border-white/10 hover:border-white/40 transition-all;
 }
 
 .card-expertise {
-    @apply bg-[#181818]/80 h-[270px] w-[230px] lg:w-full grid items-center place-content-center rounded-lg  flex-col transition-all justify-start p-5
+  @apply bg-[#181818]/80 md:h-[270px]  w-full md:w-[230px] lg:w-full grid items-center place-content-center rounded-lg  flex-col transition-all justify-start py-8 px-4 md:p-5;
 }
 
-.text-card-expertise{
-    @apply mt-5 text-2xl font-semibold text-white lg:text-3xl 2xl:text-4xl
+.text-card-expertise {
+  @apply mt-5 text-xl font-semibold text-white md:text-2xl lg:text-3xl 2xl:text-4xl;
 }
 
 .click {
-    @apply active:scale-95 transition-all
+  @apply transition-all active:scale-95;
 }
