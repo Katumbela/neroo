@@ -7,9 +7,11 @@ import { Footer } from "../../components/footer/footer";
 import { FaBuilding, FaRegEdit, FaUser } from "react-icons/fa";
 
 import { BsSend } from "react-icons/bs";
+import { useTranslation } from "react-i18next";
 
 export function Contact() {
   document.title = "Contact us | Neroo ";
+  const { t } = useTranslation();
 
   return (
     <div className="container relative">
@@ -17,7 +19,7 @@ export function Contact() {
       <NavBar />
       <div className="flex items-center justify-center py-16 border-b-2 border-primary ">
         <h1 className="text-4xl font-bold text-white lg:text-5xl ">
-          Get in Touch
+          {t("contact.title")}
         </h1>
       </div>
       <br />
@@ -25,20 +27,20 @@ export function Contact() {
       <div className="flex flex-col gap-8 md:flex-row">
         <motion.div className="w-full">
           <h1 className="text-xl font-semibold text-white">
-            Fill the form below
+            {t("contact.fill")}
           </h1>
           <br />
           <div className="flex flex-col gap-4 md:flex-row">
-            <Input placeholder="Full name" icon={FaUser} />
-            <Input placeholder="Company name" icon={FaBuilding} />
+            <Input placeholder={t("contact.form.name")} icon={FaUser} />
+            <Input placeholder={t("contact.form.company")} icon={FaBuilding} />
           </div>
           <div className="flex flex-col gap-4 mt-4">
-            <Input placeholder="Subject" icon={FaRegEdit} />
-            <TextArea placeholder="Description" />
+            <Input placeholder={t("contact.form.subject")} icon={FaRegEdit} />
+            <TextArea placeholder={t("contact.form.description")} />
           </div>
           <div className="mt-8 btns">
             <button className="flex mx-auto md:mx-0 btn-neroo-lg">
-              Send <BsSend className="my-auto ms-2" />{" "}
+            {t("contact.sendBtn")} <BsSend className="my-auto ms-2" />{" "}
             </button>
           </div>
         </motion.div>

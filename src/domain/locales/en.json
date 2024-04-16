@@ -1,13 +1,10 @@
 {
-  "welcomeMessage": "Welcome to my website!",
   "aboutPageTitle": "About Us",
   "servicesPageTitle": "Services",
   "latestWorksPageTitle": "Latest Works",
   "testimonialsPageTitle": "Testimonials",
   "contactPageTitle": "Contact Us",
   "contactText": "Contact Us",
-  "hello": "Hello",
-  "goodbye": "Goodbye",
   "titleHero": "Creative Digital Marketing Agency",
   "descHero": "We connect brands with their target audience through relevant strategies and content on digital channels.",
   "buttonHeroText": "Contact us",
@@ -48,5 +45,16 @@
   "footer":  {
     "title": "Creative Digital Marketing Agency",
     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro eum nisi quo similique, vel mollitia quisquam repellendus harum at eius excepturi consequuntur corrupti officiis repellat. Sapiente ipsam reprehenderit consequuntur maiores."
-    }
+    },
+  "contact": {
+    "title": "Get in Touch",
+    "fill": "Fill the form below",
+    "form": {
+      "name": "Full name",
+      "description": "Description",
+      "subject": "Subject",
+      "company": "Company name"
+    },
+    "sendBtn": "Send"
+  }
 }
