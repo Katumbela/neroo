@@ -3,13 +3,15 @@ import { bg, regularIcons } from "../../../utils/imagesExporter";
 import { useTranslation } from "react-i18next";
 import { Overlay } from "../overlay/overlay";
 import { FaWhatsapp } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 export function Footer() {
   const { t } = useTranslation();
 
   return (
-    <div className="mt-12 md:mt-24 lg:mt-32">
-      <motion.a target="__blank"
+    <div className="relative mt-12 md:mt-24 lg:mt-32">
+      <motion.a
+        target="__blank"
         initial={{ opacity: 0, y: 60 }}
         transition={{ duration: 0.3, delay: 0.6 }}
         animate={{ opacity: 1, y: 0 }}
@@ -40,7 +42,7 @@ export function Footer() {
               {t("footer.description")}
             </motion.p>
             <motion.div className="flex md:mb-[2rem] justify-center md:justify-start flex-col md:flex-row gap-4 mt-6 md:mt-10">
-              <button className="click btn-neroo-lg">{t("contactText")}</button>{" "}
+              <NavLink to={'/contact'} className="click btn-neroo-lg">{t("contactText")}</NavLink>{" "}
               <span className="hidden my-auto text-white md:inline-block">
                 Or
               </span>{" "}
@@ -57,13 +59,15 @@ export function Footer() {
               </a>
             </motion.div>
           </div>
+
         </motion.div>
         <motion.div
           initial={{ y: 90, opacity: 0 }}
           transition={{ duration: 1, delay: 0.4 }}
           whileInView={{ opacity: 1, y: 0 }}
-          className="w-full md:-mb-9 md:w-[70%] relative"
+          className="w-full md:-mb-9 md:w-[90%] "
         >
+          
           <Overlay />
           <img
             src={bg.bgMarketing}

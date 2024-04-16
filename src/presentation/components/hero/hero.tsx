@@ -9,12 +9,12 @@ export function Hero() {
 
   return (
     <div className="h-[600px] md:flex mb-[6rem] md:mb-[.5rem] grid items-center 2xl:h-[820px]">
-      <div className="flex w-full flex-col md:items-start items-center">
+      <div className="flex flex-col items-center w-full md:items-start">
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3 }}
-          className="text-3xl text-center md:text-start mx-3 md:mx-0 font-semibold text-white md:text-4xl lg:text-6xl 2xl:text-7xl"
+          className="mx-3 text-4xl font-bold text-center text-white md:font-semibold sm:text-3xl md:text-start md:mx-0 md:text-4xl lg:text-6xl 2xl:text-7xl"
         >
           {t("titleHero")}
         </motion.h1>
@@ -23,7 +23,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          className="text-xl md:text-start text-secondary md:text-2xl lg:text-3xl 2xl:text-4xl text-center"
+          className="text-xl text-center md:text-start text-secondary md:text-2xl lg:text-3xl 2xl:text-4xl"
         >
           {t("descHero")}
         </motion.p>
