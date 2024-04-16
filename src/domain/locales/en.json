@@ -44,5 +44,9 @@
       "title": "Card title card third",
       "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro eum nisi quo similique, vel mollitia quisquam repellendus harum at eius excepturi consequuntur corrupti officiis repellat. Sapiente ipsam reprehenderit consequuntur maiores."
       }
-  }
+  },
+  "footer":  {
+    "title": "Creative Digital Marketing Agency",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro eum nisi quo similique, vel mollitia quisquam repellendus harum at eius excepturi consequuntur corrupti officiis repellat. Sapiente ipsam reprehenderit consequuntur maiores."
+    }
 }

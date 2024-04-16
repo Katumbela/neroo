@@ -19,7 +19,11 @@ export function Expertise() {
             whileInView={{ opacity: 1, x: 0 }}
             className="card-expertise"
           >
-            <img src={regularIcons.search} className="h-[3em] md:h-[4em]" alt="" />
+            <img
+              src={regularIcons.search}
+              className="h-[3em] md:h-[4em]"
+              alt=""
+            />
             <h2 className="text-card-expertise">{t("expertise.seo")}</h2>
           </motion.div>
           <motion.div
@@ -39,7 +43,11 @@ export function Expertise() {
             whileInView={{ opacity: 1, x: 0 }}
             className="card-expertise"
           >
-            <img src={regularIcons.video} className="h-[3em] md:h-[4em]" alt="" />
+            <img
+              src={regularIcons.video}
+              className="h-[3em] md:h-[4em]"
+              alt=""
+            />
             <h2 className="text-card-expertise">
               {t("expertise.videoEditing")}
             </h2>
@@ -50,7 +58,11 @@ export function Expertise() {
             whileInView={{ opacity: 1, x: 0 }}
             className="card-expertise"
           >
-            <img src={regularIcons.content} className="h-[3em] md:h-[4em]" alt="" />
+            <img
+              src={regularIcons.content}
+              className="h-[3em] md:h-[4em]"
+              alt=""
+            />
             <h2 className="text-card-expertise">
               {t("expertise.contentWriting")}
             </h2>
@@ -61,7 +73,7 @@ export function Expertise() {
             transition={{ duration: 0.4, delay: 0.3 }}
             initial={{ opacity: 0.1, y: -50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            className="w-full px-2 mx-auto text-center"
+            className="w-full px-2 mx-auto text-center md:text-start"
           >
             <h1 className="text-3xl font-bold text-white md:font-semibold lg:text-6xl">
               {t("expertise.pageTitle")}
