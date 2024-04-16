@@ -34,7 +34,12 @@ export function Why() {
               <motion.p className="mt-6 text-lg text-secondary">
                 {t("why.description")}
               </motion.p>
-              <motion.a href="/contact" className="mt-6 click btn-neroo-lg">
+              <br />
+              <br />
+              <motion.a
+                href="/contact"
+                className="mt-[3rem] click btn-neroo-lg"
+              >
                 {t("contactText")}
               </motion.a>
             </div>

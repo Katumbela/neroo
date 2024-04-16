@@ -64,12 +64,30 @@
   transition: transform 0.5s ease;
 }
 
+.slick-dots li button::before {
+  background-color: white  ;
+  height: .3rem!important;
+  text-align: start!important;
+  width: 2rem!important;
+  margin-top: 2rem!important;
+}
+ 
+.slick-dots    {  
+  display: inline-flex!important;
+  gap: 10px!important;
+  margin-right: 2rem!important; 
+  justify-content:  start!important; 
+  margin-top: 1rem!important;
+  flex-direction: row!important;
+}
+ 
 .testimonial {
-  min-width: 100%;
+  width: 20rem;
 }
 
 .active {
   display: inline-block;
+  margin: auto;
 }
 
 .prev-btn,
