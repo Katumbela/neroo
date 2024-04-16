@@ -1,38 +1,36 @@
- 
- .hover-anim {
+.hover-anim {
   display: inline-block;
-  position: relative; 
+  position: relative;
 }
 .hover-anim:hover {
-  color: #D43D3D;
-  transition: all .3s ease-in;
+  color: #d43d3d;
+  transition: all 0.3s ease-in;
   cursor: pointer;
 }
- 
- .hover-anim:after {
-   content: '';
-   position: absolute;
-   width: 100%;
-   transform: scaleX(0);
-   height: 2.5px;
-   bottom: -1px;
-   left: 0;
-   background-color: #D43D3D;
-   transform-origin: bottom right;
-   transition: transform 0.25s ease-out;
- }
- 
- .hover-anim:hover:after {
-   transform: scaleX(1);
-   transform-origin: bottom left;
- }
 
- .z-50 {
-  z-index: 50!important;
- }
- 
- 
- .preloader-container {
+.hover-anim:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2.5px;
+  bottom: -1px;
+  left: 0;
+  background-color: #d43d3d;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-anim:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.z-50 {
+  z-index: 50 !important;
+}
+
+.preloader-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,10 +48,42 @@
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes float {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-20px) translateX(20px);
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+}
+@keyframes float2 {
+  0% {
+    transform: translateY(-10) translateX(10);
+  }
+  50% {
+    transform: translateY(-50px) translateX(25px);
+  }
+  100% {
+    transform: translateY(0) translateX(-10);
+  }
 }
 
+.animate-float {
+  animation: float 10s ease-in-out infinite;
+}
+.animate-float2 {
+  animation: float2 12s ease-in-out infinite;
+}
 
 .testimonials-container {
   overflow: hidden;
@@ -65,22 +95,22 @@
 }
 
 .slick-dots li button::before {
-  background-color: white  ;
-  height: .3rem!important;
-  text-align: start!important;
-  width: 2rem!important;
-  margin-top: 2rem!important;
+  background-color: white;
+  height: 0.3rem !important;
+  text-align: start !important;
+  width: 2rem !important;
+  margin-top: 2rem !important;
 }
- 
-.slick-dots    {  
-  display: inline-flex!important;
-  gap: 10px!important;
-  margin-right: 2rem!important; 
-  justify-content:  start!important; 
-  margin-top: 1rem!important;
-  flex-direction: row!important;
+
+.slick-dots {
+  display: inline-flex !important;
+  gap: 10px !important;
+  margin-right: 2rem !important;
+  justify-content: start !important;
+  margin-top: 1rem !important;
+  flex-direction: row !important;
 }
- 
+
 .testimonial {
   width: 20rem;
 }
