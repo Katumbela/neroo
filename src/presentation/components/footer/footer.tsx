@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { Overlay } from "../overlay/overlay";
 import { FaWhatsapp } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
+import { LanguageSwitcher } from "../lang-switcher/languageSwitcher";
 
 export function Footer() {
   const { t } = useTranslation();
@@ -47,7 +48,7 @@ export function Footer() {
                 Or
               </span>{" "}
               <a
-                href="tel:+351976234342"
+                href={`tel:${t("footer.tel")}`}
                 className="flex items-center justify-center gap-3 mt-2 text-white md:justify-start md:mt-0 click"
               >
                 <img
@@ -55,9 +56,12 @@ export function Footer() {
                   src={regularIcons.Telephone}
                   alt="Telephone Icon"
                 />{" "}
-                <span>+351 976 234 342</span>
+                <span>{t("footer.tel")}</span>
               </a>
             </motion.div>
+            <div className="">
+              <LanguageSwitcher />
+            </div>
           </div>
 
         </motion.div>
@@ -65,7 +69,7 @@ export function Footer() {
           initial={{ y: 90, opacity: 0 }}
           transition={{ duration: 1, delay: 0.4 }}
           whileInView={{ opacity: 1, y: 0 }}
-          className="w-full md:-mb-9 md:w-[90%] "
+          className="w-full relative md:-mb-9 md:w-[90%] "
         >
           
           <Overlay />

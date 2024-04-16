@@ -9,7 +9,7 @@ import { Contact } from "./presentation/pages/contact/contact";
 const App: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [isLoading2, setIsLoading2] = useState(true);
-
+ 
 
   useEffect(() => {
     // Simulação de carregamento assíncrono

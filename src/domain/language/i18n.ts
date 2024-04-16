@@ -18,7 +18,7 @@ i18n
         translation: translationPT,
       },
     },
-    lng: 'en', // idioma padrão
+    lng: localStorage.getItem("lang") || "en", // idioma padrão
     fallbackLng: 'en', // idioma de fallback
     interpolation: {
       escapeValue: false, // reagir não escapar nossas seqüências de tradução

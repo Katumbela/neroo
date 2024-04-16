@@ -1,25 +1,61 @@
 {
-  "welcomeMessage": "Bem-vindo ao meu website!",
   "aboutPageTitle": "Sobre Nós",
   "servicesPageTitle": "Serviços",
-  "latestWorksPageTitle": "Últimos Trabalhos",
+  "latestWorksPageTitle": "Trabalhos Recentes",
   "testimonialsPageTitle": "Depoimentos",
-  "contactPageTitle": "Contate-nos",
-  "hello": "Olá",
-  "goodbye": "Adeus",
-  "titleHero": "Agência de Marketing Digital Criativo",
-  "descHero": "Conectamos marcas com seu público-alvo por meio de estratégias relevantes e conteúdo em canais digitais.",
-  "buttonHeroText": "Contate-nos",
+  "contactPageTitle": "Entre em Contato",
+  "contactText": "Entre em Contato",
+  "titleHero": "Agência de Marketing Digital Criativa",
+  "descHero": "Conectamos marcas com seu público-alvo por meio de estratégias e conteúdo relevantes nos canais digitais.",
+  "buttonHeroText": "Entre em contato",
   "companiesTitle": "Destaque",
   "companiesSubTitle": "Nossas Certificações",
   "expertise": {
     "pageTitle": "Nossa Experiência em Marketing Digital",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur labore beatae ex fugiat ut recusandae repellendus totam sapiente quasi tempora, alias exercitationem quo, quas ad expedita nemo officia laboriosam quia.",
-    "seo": "Search Engine Optimization",
-    "websiteDesign": "Website design & development",
-    "videoEditing": "Video editing & Production",
-    "contentWriting": "Content Writing",
-    "socialMediaMarketing": "Social media Marketing",
-    "payPerClick": "Pay per click (PPC)"
+    "seo": "Otimização de Motores de Busca",
+    "websiteDesign": "Design e desenvolvimento de sites",
+    "videoEditing": "Edição e Produção de Vídeo",
+    "contentWriting": "Escrita de Conteúdo",
+    "socialMediaMarketing": "Marketing em Redes Sociais",
+    "payPerClick": "Pagamento por Clique (PPC)"
+  },
+  "why": {
+    "title": "Por que escolher NEROO",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro eum nisi quo similique, vel mollitia quisquam repellendus harum at eius excepturi consequuntur corrupti officiis repellat. Sapiente ipsam reprehenderit consequuntur maiores."
+  },
+  "latestWorks": {
+    "title": "Nossos Trabalhos Recentes",
+    "viewProject": "Ver projeto"
+  },
+  "dummyCard": {
+    "first":  {
+      "title": "Título do cartão primeiro cartão",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro eum nisi quo similique, vel mollitia quisquam repellendus harum at eius excepturi consequuntur corrupti officiis repellat. Sapiente ipsam reprehenderit consequuntur maiores."
+      },
+    "second":  {
+      "title": "Título do cartão segundo cartão bla bla",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro eum nisi quo similique, vel mollitia quisquam repellendus harum at eius excepturi consequuntur corrupti officiis repellat. Sapiente ipsam reprehenderit consequuntur maiores."
+      },
+    "third":  {
+      "title": "Título do cartão terceiro cartão",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro eum nisi quo similique, vel mollitia quisquam repellendus harum at eius excepturi consequuntur corrupti officiis repellat. Sapiente ipsam reprehenderit consequuntur maiores."
+      }
+  },
+  "footer":  {
+    "title": "Agência de Marketing Digital Criativa",
+    "tel": "+351 976 234 342",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro eum nisi quo similique, vel mollitia quisquam repellendus harum at eius excepturi consequuntur corrupti officiis repellat. Sapiente ipsam reprehenderit consequuntur maiores."
+    },
+  "contact": {
+    "title": "Entre em Contato",
+    "fill": "Preencha o formulário abaixo",
+    "form": {
+      "name": "Nome completo",
+      "description": "Descrição",
+      "subject": "Assunto",
+      "company": "Nome da empresa"
+    },
+    "sendBtn": "Enviar"
   }
 }
