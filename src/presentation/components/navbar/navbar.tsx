@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import logo from "../../../assets/imgs/logo design 1.jpg";
+import logoSM from "../../../assets/imgs/neroo (1).jpeg";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
@@ -21,7 +22,7 @@ export function NavBar() {
   return (
     <>
       <motion.div
-        className="z-50 hidden md:flex justify-between py-5"
+        className="z-50 justify-between hidden py-5 md:flex"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
@@ -98,12 +99,19 @@ export function NavBar() {
                 : "hidden"
             }`}
           >
-            <button
-              onClick={toggleMenu}
-              className="text-white -right-[90%] text-4xl absolute hover-anim"
-            >
-              <FaTimes />
-            </button>
+            <div className="flex justify-between">
+              <img
+                src={logoSM}
+                className="w-[4em] h-[4em] rounded-full"
+                alt=""
+              />
+              <button
+                onClick={toggleMenu}
+                className="text-4xl text-white -mt-7 hover-anim"
+              >
+                <FaTimes />
+              </button>
+            </div>
             <motion.a
               variants={containerVariants}
               initial="hidden"
