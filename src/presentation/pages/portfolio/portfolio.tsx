@@ -2,7 +2,7 @@
 
 import { abbreviateText } from "../../../utils/abreviate";
 import { cardImages } from "../../../utils/imagesExporter";
-import { BgCover, FloatingBalls, LinePrimary, NavBar } from "../../components";
+import { BgCover, FloatingBalls, LinePrimary, NavBar, NewsLetter } from "../../components";
 import { motion } from "framer-motion";
 
 import { useTranslation } from "react-i18next";
@@ -78,7 +78,7 @@ export function PortFolio() {
               transition={{ duration: 0.3 }}
             >
               <div
-                className="h-[250px] md:h-[320px 2xl:h-[500px] bg-cover"
+                className="h-[250px] rounded-lg md:h-[320px 2xl:h-[500px] bg-cover"
                 style={{
                   background: `url('${card.img}')`,
                   backgroundSize: "cover",
@@ -104,7 +104,7 @@ export function PortFolio() {
       </div>
       <br />
       <br />
-      <LinePrimary />
+      <NewsLetter />
       <br />
 
       <Footer />

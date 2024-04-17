@@ -1,7 +1,14 @@
 //import { useTranslation } from "react-i18next";
 
 import { motion } from "framer-motion";
-import { FloatingBalls, Input, NavBar, TextArea } from "../../components";
+import {
+  FloatingBalls,
+  Footer,
+  Input,
+  NavBar,
+  NewsLetter,
+  TextArea,
+} from "../../components";
 import {
   FaBuilding,
   FaEnvelope,
@@ -56,7 +63,7 @@ export function Contact() {
       console.log("Email enviado com sucesso!", resposta);
 
       setLoading(false);
-      setSent(true)
+      setSent(true);
       // Limpar os campos após o envio
       setName("");
       setCompany("");
@@ -81,7 +88,7 @@ export function Contact() {
       </div>
       <br />
       <br />
-      <div className="container flex flex-col gap-10 md:flex-row">
+      <div className="flex flex-col gap-10 md:flex-row">
         <motion.div className="w-full">
           <motion.h1 className="text-4xl font-bold text-white lg:text-6xl 2xl:text-[5.5rem]">
             Have You Got A Project You’d Like to Discuss With Us?
@@ -92,8 +99,8 @@ export function Contact() {
             discuss your project in more detail.
           </motion.p>
         </motion.div>
-        <motion.div className="grid items-center px-12 w-[50%]">
-          <div className="my-auto">
+        <motion.div className="grid items-center md:px-12 md:w-[70%] 2xl:w-[85%]">
+          <div className="my-auto ">
             <h1 className="text-xl font-semibold text-white">
               {t("contact.fill")}
             </h1>
@@ -133,14 +140,19 @@ export function Contact() {
                 onChange={(e) => setDescription(e)}
               />
             </div>
-            {
-            sent && <>
-            <div className="relative w-full p-4 mx-auto mt-2 text-lg text-green-800 bg-green-100 border border-green-600 rounded-lg 2xl:text-lg">
-                <span onClick={()=> setSent(false)} className="absolute top-0 cursor-pointer right-2">&times;</span>
-                Seu email foi adicionado com sucesso a nossa newsletter
-            </div>
-            </>
-        }
+            {sent && (
+              <>
+                <div className="relative w-full p-4 mx-auto mt-2 text-lg text-green-800 bg-green-100 border border-green-600 rounded-lg 2xl:text-lg">
+                  <span
+                    onClick={() => setSent(false)}
+                    className="absolute top-0 cursor-pointer right-2"
+                  >
+                    &times;
+                  </span>
+                  Seu email foi adicionado com sucesso a nossa newsletter
+                </div>
+              </>
+            )}
             <div className="mt-8 btns">
               <button
                 onClick={handleSubmit}
@@ -175,7 +187,9 @@ export function Contact() {
       </div>
       <br />
       <br />
+      <NewsLetter />
       <br />
+      <Footer />
       <br />
     </div>
   );

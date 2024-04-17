@@ -20,7 +20,7 @@ export function Input({ icon: Icon, placeholder, value, onChange }: InputType) {
         placeholder={placeholder}
         value={value}
         onChange={handleChange}
-        className="my-auto bg-transparent outline-none"
+        className="w-full my-auto bg-transparent outline-none"
       />
     </div>
   );

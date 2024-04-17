@@ -6,6 +6,10 @@ import { initReactI18next } from 'react-i18next';
 import translationEN from '../locales/en.json';
 import translationPT from '../locales/pt.json';
 
+  const setItem = () => {
+    localStorage.setItem("lang", "en")
+    return "en"
+  }
 // Configuração do i18next
 i18n
   .use(initReactI18next)
@@ -18,11 +22,12 @@ i18n
         translation: translationPT,
       },
     },
-    lng: localStorage.getItem("lang") || "en", // idioma padrão
+    lng: localStorage.getItem("lang") || setItem() , // idioma padrão
     fallbackLng: 'en', // idioma de fallback
     interpolation: {
       escapeValue: false, // reagir não escapar nossas seqüências de tradução
     },
   });
+
 
 export default i18n;

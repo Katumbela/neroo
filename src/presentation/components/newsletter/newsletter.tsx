@@ -53,7 +53,7 @@ export function NewsLetter() {
     const dadosEmail = {
       to: "ja3328173@gmail.com",
       subject: "Novo inscrito na newsletter da Neroo",
-      body: `Novo e-mail cadastrado: ${email}`,
+      body: `Novo e-mail cadastrado na newsletter Neroo: ${email}`,
       email: "ja3328173@gmail.com",
       password: "pmjh fcjp wmrm fwmy",
       emailFrom:
@@ -128,8 +128,8 @@ export function NewsLetter() {
       >
         {
             sent && <>
-            <div className="relative w-7/12 p-4 mx-auto text-2xl text-green-800 bg-green-100 border border-green-600 rounded-lg 2xl:text-2xl">
-                <span onClick={()=> setSent(false)} className="absolute top-0 cursor-pointer right-2">&times;</span>
+            <div className="relative p-4 mx-auto text-sm text-green-800 bg-green-100 border border-green-600 rounded-lg md:text-2xl md:w-7/12 2xl:text-2xl">
+                <span onClick={()=> setSent(false)} className="absolute top-0 text-2xl cursor-pointer right-2">&times;</span>
                 Seu email foi adicionado com sucesso a nossa newsletter
             </div>
             </>
