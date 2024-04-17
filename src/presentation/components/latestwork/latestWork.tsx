@@ -56,8 +56,8 @@ export function LatestWorks() {
               }}
             ></div>
             <motion.div className="absolute inset-0 flex justify-center transition-opacity duration-300 bg-black bg-opacity-50 opacity-0 hover:opacity-100">
-              <button className="px-4 md:px-7 click py-2 md:py-4 h-[2.5rem] md:h-[3rem] mt-[6.5rem] md:mt-[8rem] text-base md:text-xl font-semibold text-white border border-white rounded-[80px] bg-primary">
-                {t("latestWorks.viewProject")}
+              <button className="btn-view">
+               <span className="-mt-2"> {t("latestWorks.viewProject")}</span>
               </button>
             </motion.div>
             <div className="py-4">

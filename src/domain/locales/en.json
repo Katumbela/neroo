@@ -52,6 +52,7 @@
     "fill": "Fill the form below",
     "form": {
       "name": "Full name",
+      "email":"Email",
       "description": "Description",
       "subject": "Subject",
       "company": "Company name"

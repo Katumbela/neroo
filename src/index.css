@@ -18,6 +18,10 @@
   @apply mt-5 text-xl font-semibold text-white md:text-2xl lg:text-3xl 2xl:text-4xl;
 }
 
+.btn-view {
+  @apply px-4 md:px-7 click    md:py-4 h-[2.5rem] md:h-[3rem] flex place-content-center mt-[6.5rem] md:mt-[8rem] text-base md:text-xl font-semibold text-white border border-white rounded-[80px] bg-primary
+}
+
 .click {
   @apply transition-all active:scale-95;
 }

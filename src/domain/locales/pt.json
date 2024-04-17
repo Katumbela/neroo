@@ -52,6 +52,7 @@
     "fill": "Preencha o formulário abaixo",
     "form": {
       "name": "Nome completo",
+      "email":"Email",
       "description": "Descrição",
       "subject": "Assunto",
       "company": "Nome da empresa"
