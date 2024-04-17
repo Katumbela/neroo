@@ -5,13 +5,17 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "./presentation/pages";
 import { Preloader } from "./presentation/components";
 import { Contact, PortFolio } from "./presentation/pages";
+import CookieConsent from "react-cookie-consent";
+import Cookies from "js-cookie";
+import { useTranslation } from "react-i18next";
 
 const App: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [isLoading2, setIsLoading2] = useState(true);
- 
-    // Configurando cookies úteis para SEO e desempenho
- 
+
+  const { t } = useTranslation();
+
+  // Configurando cookies úteis para SEO e desempenho
 
   useEffect(() => {
     // Simulação de carregamento assíncrono
@@ -24,14 +28,40 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={isLoading ? <Preloader/> : <Home/>} />
-        <Route path="/contact" element={isLoading2 ? <Preloader/> : <Contact />} />
-        <Route path="/portfolio" element={isLoading2 ? <Preloader/> : <PortFolio />} />
-      </Routes>
-      
-    </BrowserRouter>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={isLoading ? <Preloader /> : <Home />} />
+          <Route
+            path="/contact"
+            element={isLoading2 ? <Preloader /> : <Contact />}
+          />
+          <Route
+            path="/portfolio"
+            element={isLoading2 ? <Preloader /> : <PortFolio />}
+          />
+        </Routes>
+      </BrowserRouter>
+
+      <CookieConsent
+        location="bottom"
+        buttonText="OK"
+        cookieName="NerooEducacaoAngola"
+        style={{ background: "#2B373B" }}
+        contentClasses="container"
+        buttonStyle={{ background: "#E02200", color: "#fff", fontSize: "13px" }}
+        expires={10}
+        onAccept={() => {
+          Cookies.set("theme", "dark", { expires: 365 }); // Tema escuro
+          Cookies.set("userBehavior", "data", { expires: 365 }); // Dados de comportamento do usuário
+
+          // Marcar o aviso de cookie como aceito
+          Cookies.set("cookieAccepted", "true", { expires: 365 });
+        }}
+      >
+        {t("cookieText")}
+      </CookieConsent>
+    </>
   );
 };
 
