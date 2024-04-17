@@ -24,8 +24,8 @@ const App: React.FC = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" Component={isLoading ? Preloader : Home} />
-        <Route path="/contact" Component={isLoading2 ? Preloader : Contact} />
+        <Route path="/" element={isLoading ?<Preloader/> : <Home/>} />
+        <Route path="/contact" element={isLoading2 ? <Preloader/> : <Contact />} />
       </Routes>
     </BrowserRouter>
   );
