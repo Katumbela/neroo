@@ -24,6 +24,7 @@ export function Contact() {
   const [subject, setSubject] = useState("");
   const [description, setDescription] = useState("");
   const [loading, setLoading] = useState(false);
+  const [sent, setSent] = useState(false);
 
   const handleSubmit = async () => {
     setLoading(true);
@@ -55,6 +56,7 @@ export function Contact() {
       console.log("Email enviado com sucesso!", resposta);
 
       setLoading(false);
+      setSent(true)
       // Limpar os campos após o envio
       setName("");
       setCompany("");
@@ -131,6 +133,14 @@ export function Contact() {
                 onChange={(e) => setDescription(e)}
               />
             </div>
+            {
+            sent && <>
+            <div className="relative w-full p-4 mx-auto mt-2 text-lg text-green-800 bg-green-100 border border-green-600 rounded-lg 2xl:text-lg">
+                <span onClick={()=> setSent(false)} className="absolute top-0 cursor-pointer right-2">&times;</span>
+                Seu email foi adicionado com sucesso a nossa newsletter
+            </div>
+            </>
+        }
             <div className="mt-8 btns">
               <button
                 onClick={handleSubmit}
