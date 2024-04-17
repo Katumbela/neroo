@@ -1,6 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 //import { useTranslation } from "react-i18next";
 
+ 
 import {
   Companies,
   Expertise,
@@ -15,8 +16,8 @@ import {
 import { Footer } from "../../components/footer/footer";
 
 export function Home() {
+  document.title = "Welcome | Neroo ";
 
-  document.title = "Welcome | Neroo "
   return (
     <div className="container relative">
       <FloatingBalls />

@@ -8,6 +8,10 @@
   cursor: pointer;
 }
 
+body, html {
+  scroll-behavior: smooth;
+}
+
 .hover-anim:after {
   content: "";
   position: absolute;

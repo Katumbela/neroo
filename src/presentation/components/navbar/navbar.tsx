@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import logo from "../../../assets/imgs/logo design 1.jpg";
 import logoSM from "../../../assets/imgs/neroo (1).jpeg";
 import { motion } from "framer-motion";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
 
 const containerVariants = {
@@ -27,11 +27,12 @@ export function NavBar() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <Link to={"/"} className="my-auto">
+        <a href={"/"} className="my-auto">
           <motion.img src={logo} />
-        </Link>
+        </a>
         <div className="flex gap-6 my-auto">
           <motion.a
+            href="/#about"
             variants={containerVariants}
             initial="hidden"
             className="text-white hover-anim"
@@ -40,6 +41,7 @@ export function NavBar() {
             {t("aboutPageTitle")}
           </motion.a>
           <motion.a
+            href="./#services"
             variants={containerVariants}
             initial="hidden"
             className="text-white hover-anim"
@@ -48,6 +50,7 @@ export function NavBar() {
             {t("servicesPageTitle")}
           </motion.a>
           <motion.a
+          href="./#works"
             variants={containerVariants}
             initial="hidden"
             className="text-white hover-anim"
@@ -56,6 +59,7 @@ export function NavBar() {
             {t("latestWorksPageTitle")}
           </motion.a>
           <motion.a
+            href="./#testimonials"
             variants={containerVariants}
             initial="hidden"
             className="text-white hover-anim"
@@ -65,12 +69,12 @@ export function NavBar() {
           </motion.a>
         </div>
         <div className="flex">
-          <Link
-            to={"/contact"}
+          <a
+            href={"/contact"}
             className="px-5 py-2 font-semibold bg-primary rounded-[80px] hover:bg-primary/90 click"
           >
             {t("contactPageTitle")}
-          </Link>
+          </a>
         </div>
       </motion.div>
 
@@ -89,9 +93,9 @@ export function NavBar() {
           animate={{ opacity: isOpen ? 1 : 0, y: isOpen ? 0 : -50 }}
           transition={{ duration: 0.5 }}
         >
-          <Link to={"/"} className="hidden my-auto md:block">
+          <a href={"/"} className="hidden my-auto md:block">
             <motion.img src={logo} />
-          </Link>
+          </a>
           <div
             className={`flex fixed flex-col gap-6 my-auto md:flex-row md:gap-6 ${
               isOpen
@@ -154,9 +158,9 @@ export function NavBar() {
         </motion.div>
       </div>
       <div className="flex justify-between mb-[3rem] -mt-4 px-2 md:hidden">
-        <Link to={"/"} className="my-auto">
+        <a href={"/"} className="my-auto">
           <motion.img src={logo} />
-        </Link>
+        </a>
         <button onClick={toggleMenu} className="text-white hover-anim">
           <svg
             xmlns="http://www.w3.org/2000/svg"

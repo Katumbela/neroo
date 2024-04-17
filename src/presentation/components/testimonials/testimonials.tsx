@@ -75,7 +75,7 @@ export function Testimonials() {
   ];
 
   return (
-    <div className="px-6 py-16 my-16 md:px-1 slider-container">
+    <div id="testimonials" className="px-6 py-16 my-16 md:px-1 slider-container">
       <Slider {...settings}>
         {testimonials.map((testimonial) => (
           <div key={testimonial.id} className="mx-[2rem]">

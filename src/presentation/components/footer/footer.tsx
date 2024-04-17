@@ -2,12 +2,37 @@ import { motion } from "framer-motion";
 import { bg, regularIcons } from "../../../utils/imagesExporter";
 import { useTranslation } from "react-i18next";
 import { Overlay } from "../overlay/overlay";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaArrowUp, FaWhatsapp } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import { LanguageSwitcher } from "../lang-switcher/languageSwitcher";
+import { useEffect, useState } from "react";
 
 export function Footer() {
   const { t } = useTranslation();
+  const [showScrollButton, setShowScrollButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setShowScrollButton(true);
+      } else {
+        setShowScrollButton(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const handleScrollTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
   return (
     <div className="relative mt-12 md:mt-24 lg:mt-32">
@@ -17,7 +42,7 @@ export function Footer() {
         transition={{ duration: 0.3, delay: 0.6 }}
         animate={{ opacity: 1, y: 0 }}
         href="https://wa.me/+244928134249"
-        className="fixed z-50 p-3 text-4xl border-2 rounded-full border-white/50 hover:text-white hover:border-white hover:bg-green-600 text-white/50 bg-green-600/50 bottom-10 click right-3"
+        className="fixed z-50 p-3 text-4xl border-2 rounded-full border-white/50 hover:text-white hover:border-white hover:bg-green-600 text-white/50 bg-green-600/50 bottom-20 click right-3"
       >
         {" "}
         <FaWhatsapp />{" "}
@@ -43,7 +68,9 @@ export function Footer() {
               {t("footer.description")}
             </motion.p>
             <motion.div className="flex md:mb-[2rem] justify-center md:justify-start flex-col md:flex-row gap-4 mt-6 md:mt-10">
-              <NavLink to={'/contact'} className="click btn-neroo-lg">{t("contactText")}</NavLink>{" "}
+              <NavLink to={"/contact"} className="click btn-neroo-lg">
+                {t("contactText")}
+              </NavLink>{" "}
               <span className="hidden my-auto text-white md:inline-block">
                 Or
               </span>{" "}
@@ -63,7 +90,6 @@ export function Footer() {
               <LanguageSwitcher />
             </div>
           </div>
-
         </motion.div>
         <motion.div
           initial={{ y: 90, opacity: 0 }}
@@ -71,7 +97,6 @@ export function Footer() {
           whileInView={{ opacity: 1, y: 0 }}
           className="w-full relative md:-mb-9 md:w-[90%] "
         >
-          
           <Overlay />
           <img
             src={bg.bgMarketing}
@@ -80,6 +105,15 @@ export function Footer() {
           />
         </motion.div>
       </div>
+      {showScrollButton && (
+        <button
+          onClick={handleScrollTop}
+          className="fixed flex items-center gap-2 px-4 py-2 text-center text-white duration-75 rounded-full shadow-lg bg-primary place-content-center bottom-4 right-4 animate-bounce"
+        >
+          <FaArrowUp />
+         <span className="hidden text-sm md:block"> Scroll To Top</span>
+        </button>
+      )}
     </div>
   );
 }
