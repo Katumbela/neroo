@@ -6,6 +6,7 @@ import { BgCover, FloatingBalls, LinePrimary, NavBar } from "../../components";
 import { motion } from "framer-motion";
 
 import { useTranslation } from "react-i18next";
+import { Footer } from "../../components/footer/footer";
 
 export function PortFolio() {
   const { t } = useTranslation();
@@ -60,7 +61,10 @@ export function PortFolio() {
         <h1 className="text-4xl font-semibold text-center text-white md:mt-10 2xl:text-6xl 2xl:font-bold">
           {t("portfolio.title")}
         </h1>
-        <p className="text-xl text-center text-white 2xl:text-3xl md:text-2xl"> {t("portfolio.desc")}</p>
+        <p className="text-xl text-center text-white 2xl:text-3xl md:text-2xl">
+          {" "}
+          {t("portfolio.desc")}
+        </p>
         <LinePrimary />
         <br />
         <br />
@@ -98,6 +102,12 @@ export function PortFolio() {
           ))}
         </div>
       </div>
+      <br />
+      <br />
+      <LinePrimary />
+      <br />
+
+      <Footer />
     </div>
   );
 }
