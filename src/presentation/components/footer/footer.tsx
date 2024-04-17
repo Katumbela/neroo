@@ -41,8 +41,9 @@ export function Footer() {
         initial={{ opacity: 0, y: 60 }}
         transition={{ duration: 0.3, delay: 0.6 }}
         animate={{ opacity: 1, y: 0 }}
+        
         href="https://wa.me/+244928134249"
-        className="fixed z-50 p-3 text-4xl border-2 rounded-full border-white/50 hover:text-white hover:border-white hover:bg-green-600 text-white/50 bg-green-600/50 bottom-20 click right-3"
+        className={`fixed z-50 p-3 text-4xl border-2 rounded-full border-white/50 hover:text-white hover:border-white hover:bg-green-600 text-white/50 bg-green-600/50 ${showScrollButton ? 'bottom-20' : 'bottom-8'}  click right-3`}
       >
         {" "}
         <FaWhatsapp />{" "}
