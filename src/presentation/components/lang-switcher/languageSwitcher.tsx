@@ -14,7 +14,7 @@ export function LanguageSwitcher() {
   }, []);
 
   return (
-    <div className="w-[9rem] py-2 flex justify-center mx-auto mt-6 md:mx-0 rounded-full px-3 text-xl font-bold bg-white">
+    <div className="w-[9rem] py-2 flex justify-center mx-auto mt-6 md:mx-0 rounded-full px-3 text-xl font-bold md:bg-transparent md:text-white bg-white">
       <button>
         <BsGlobe2 className="my-auto me-2" />
       </button>
