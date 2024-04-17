@@ -86,7 +86,7 @@ export function PortFolio() {
                 }}
               ></div>
               <motion.div className="absolute inset-0 flex justify-center transition-opacity duration-300 bg-black bg-opacity-50 opacity-0 hover:opacity-100">
-                <button className="btn-view">
+                <button className="btn-view 2xl:mt-[15rem]">
                   <span className=""> {t("latestWorks.viewProject")}</span>
                 </button>
               </motion.div>

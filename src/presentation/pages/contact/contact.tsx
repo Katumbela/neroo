@@ -142,14 +142,14 @@ export function Contact() {
             </div>
             {sent && (
               <>
-                <div className="relative w-full p-4 mx-auto mt-2 text-lg text-green-800 bg-green-100 border border-green-600 rounded-lg 2xl:text-lg">
+                <div className="relative w-full p-4 mx-auto mt-2 text-sm text-green-800 bg-green-100 border border-green-600 rounded-lg 2xl:text-md">
                   <span
                     onClick={() => setSent(false)}
                     className="absolute top-0 cursor-pointer right-2"
                   >
                     &times;
                   </span>
-                  Seu email foi adicionado com sucesso a nossa newsletter
+                  Seu contacto foi recebido com sucess, entremos em contacto o mais breve possivel. Obrigado !
                 </div>
               </>
             )}
@@ -187,10 +187,8 @@ export function Contact() {
       </div>
       <br />
       <br />
-      <NewsLetter />
-      <br />
+      <NewsLetter /> 
       <Footer />
-      <br />
     </div>
   );
 }

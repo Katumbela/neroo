@@ -3,7 +3,6 @@ import { bg, regularIcons } from "../../../utils/imagesExporter";
 import { useTranslation } from "react-i18next";
 import { Overlay } from "../overlay/overlay";
 import { FaArrowUp, FaWhatsapp } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
 import { LanguageSwitcher } from "../lang-switcher/languageSwitcher";
 import { useEffect, useState } from "react";
 
@@ -69,9 +68,9 @@ export function Footer() {
               {t("footer.description")}
             </motion.p>
             <motion.div className="flex md:mb-[2rem] justify-center md:justify-start flex-col md:flex-row gap-4 mt-6 md:mt-10">
-              <NavLink to={"/contact"} className="click btn-neroo-lg">
+              <a href={"/contact"} className="click btn-neroo-lg">
                 {t("contactText")}
-              </NavLink>{" "}
+              </a>{" "}
               <span className="hidden my-auto text-white md:inline-block">
                 Or
               </span>{" "}
@@ -96,7 +95,7 @@ export function Footer() {
           initial={{ y: 90, opacity: 0 }}
           transition={{ duration: 1, delay: 0.4 }}
           whileInView={{ opacity: 1, y: 0 }}
-          className="w-full relative md:-mb-9 md:w-[90%] "
+          className="w-full relative md:-mb-20 md:w-[90%] "
         >
           <Overlay />
           <img

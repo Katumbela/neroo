@@ -19,7 +19,7 @@
 }
 
 .btn-view {
-  @apply px-4 md:px-7 click   md:py-4 h-[2.5rem] md:h-[3rem] flex place-content-center mt-[6.5rem] md:mt-[8rem] 2xl:mt-[15rem] text-base md:text-xl font-semibold text-white border border-white rounded-[80px] bg-primary
+  @apply px-4 md:px-7 click   md:py-4 h-[2.5rem] md:h-[3rem] flex place-content-center mt-[6.5rem] md:mt-[8rem] text-base md:text-xl font-semibold text-white border border-white rounded-[80px] bg-primary
 }
 
 .btn-view span {
