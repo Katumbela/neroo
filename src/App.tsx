@@ -10,6 +10,8 @@ const App: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [isLoading2, setIsLoading2] = useState(true);
  
+    // Configurando cookies úteis para SEO e desempenho
+ 
 
   useEffect(() => {
     // Simulação de carregamento assíncrono
@@ -28,6 +30,7 @@ const App: React.FC = () => {
         <Route path="/contact" element={isLoading2 ? <Preloader/> : <Contact />} />
         <Route path="/portfolio" element={isLoading2 ? <Preloader/> : <PortFolio />} />
       </Routes>
+      
     </BrowserRouter>
   );
 };

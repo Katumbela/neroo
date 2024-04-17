@@ -2,6 +2,7 @@
   "aboutPageTitle": "Sobre Nós",
   "servicesPageTitle": "Serviços",
   "latestWorksPageTitle": "Trabalhos Recentes",
+  "cookieText": "Este site usa cookies para melhorar a experiência do usuário.",
   "testimonialsPageTitle": "Depoimentos",
   "contactPageTitle": "Entre em Contato",
   "contactText": "Entre em Contato",
@@ -58,7 +59,7 @@
     "descForm": "Estamos entusiasmados em saber mais, basta nos fornecer seu e-mail e número de telefone e entraremos em contato com um breve questionário para nos ajudar a discutir seu projeto com mais detalhes.",
     "form": {
       "name": "Nome completo",
-      "email":"Email",
+      "email":"E-mail ou telefone",
       "description": "Descrição",
       "subject": "Assunto",
       "company": "Nome da empresa"

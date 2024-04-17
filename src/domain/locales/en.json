@@ -1,5 +1,6 @@
 {
   "aboutPageTitle": "About Us",
+  "cookieText": "This website uses cookies to enhance the user experience.",
   "servicesPageTitle": "Services",
   "latestWorksPageTitle": "Latest Works",
   "testimonialsPageTitle": "Testimonials",
@@ -58,7 +59,7 @@
     "descForm": "We’re excited to hear more, just give us your email and phone number and we will be in touch with a short questionnaire to help us discuss your project in more detail.",
     "form": {
       "name": "Full name",
-      "email":"Email",
+      "email":"Email or phone number",
       "description": "Description",
       "subject": "Subject",
       "company": "Company name"
