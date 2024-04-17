@@ -7,7 +7,7 @@ export function Why() {
   const { t } = useTranslation();
 
   return (
-    <div className="my-[10%] ">
+    <div id="about" className="my-[10%] ">
       <motion.div>
         <div className="flex flex-col md:flex-row  my-[7rem] gap-8 h-[620px]">
           <motion.div className="relative flex justify-center w-full md:items-center md:grid">

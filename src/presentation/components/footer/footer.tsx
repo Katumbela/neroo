@@ -109,7 +109,7 @@ export function Footer() {
       {showScrollButton && (
         <button
           onClick={handleScrollTop}
-          className="fixed flex items-center gap-2 px-4 py-2 text-center text-white rounded-full shadow-lg click bg-primary place-content-center bottom-4 right-4 animate-bounce"
+          className="fixed flex items-center gap-2 px-2 py-2 text-center text-white rounded-full shadow-lg md:px-4 click bg-primary place-content-center bottom-4 right-4 animate-bounce"
         >
           <FaArrowUp />
          <span className="hidden text-sm md:block"> Scroll To Top</span>
