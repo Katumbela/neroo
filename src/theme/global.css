@@ -8,7 +8,8 @@
   cursor: pointer;
 }
 
-body, html {
+body,
+html {
   scroll-behavior: smooth;
 }
 
@@ -59,6 +60,19 @@ body, html {
     transform: rotate(360deg);
   }
 }
+
+@keyframes arrowAnim {
+  0% {
+    transform: translateX(3px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
 @keyframes float {
   0% {
     transform: translateY(0) translateX(0);
@@ -82,6 +96,9 @@ body, html {
   }
 }
 
+.arrow-anim {
+  animation: arrowAnim 0.8s ease-in infinite;
+}
 .animate-float {
   animation: float 10s ease-in-out infinite;
 }
@@ -144,4 +161,35 @@ body, html {
 
 .active-dot {
   background-color: #333;
+}
+
+.bgCover {
+  height: 12rem;
+  width: 100% !important;
+  background: linear-gradient(-182deg,  #0d0d0d,   #00000000 ),
+    url(../assets/bg/neroo_cover.jpg) ;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  border-bottom-left-radius: 60px !important;
+  border-bottom-right-radius: 60px !important;
+  align-items: center;
+  background-position: center;
+}
+
+
+@media (max-width: 690px) {
+  
+.bgCover {
+  height: 12rem;
+  margin-top: -2rem;
+  width: 100% !important;
+  background: linear-gradient(-182deg,  #0d0d0d,   #00000000 ),
+    url(../assets/bg/neroo_cover.jpg) ;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  align-items: center;
+  background-position: center;
+}
 }

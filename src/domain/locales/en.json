@@ -5,9 +5,12 @@
   "testimonialsPageTitle": "Testimonials",
   "contactPageTitle": "Contact Us",
   "contactText": "Contact Us",
-  "titleHero": "Creative Digital Marketing Agency",
-  "descHero": "We connect brands with their target audience through relevant strategies and content on digital channels.",
-  "buttonHeroText": "Contact us",
+  "hero":{
+    "titleHero": "Creative Digital Marketing Agency",
+    "descHero": "We connect brands with their target audience through relevant strategies and content on digital channels.",
+    "buttonHeroText": "Contact us",
+    "portfolio": "Portfolio"
+  },
   "companiesTitle": "Featured",
   "companiesSubTitle": "Our Certifications",
   "expertise": {
@@ -64,5 +67,9 @@
     "title": "Subscribe to our Newsletter",
     "email": "Type your email",
     "btnText": "Subscribe"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "desc": "See all of our works done for some great brands around the world"
   }
 }

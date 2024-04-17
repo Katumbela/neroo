@@ -4,7 +4,7 @@ import "./index.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "./presentation/pages";
 import { Preloader } from "./presentation/components";
-import { Contact } from "./presentation/pages/contact/contact";
+import { Contact, PortFolio } from "./presentation/pages";
 
 const App: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -15,10 +15,10 @@ const App: React.FC = () => {
     // Simulação de carregamento assíncrono
     setTimeout(() => {
       setIsLoading(false); // Após o carregamento, define isLoading como false
-    }, 5000);
+    }, 3000);
     setTimeout(() => {
       setIsLoading2(false); // Após o carregamento, define isLoading como false
-    }, 2000);
+    }, 1800);
   }, []);
 
   return (
@@ -26,6 +26,7 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={isLoading ? <Preloader/> : <Home/>} />
         <Route path="/contact" element={isLoading2 ? <Preloader/> : <Contact />} />
+        <Route path="/portfolio" element={isLoading2 ? <Preloader/> : <PortFolio />} />
       </Routes>
     </BrowserRouter>
   );

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import bgHero from "../../../assets/bg/bg-hero.png";
 import { useTranslation } from "react-i18next";
 import { Overlay } from "../overlay/overlay";
-import { Link } from "react-router-dom";
+import { FaArrowRight } from "react-icons/fa";
 
 export function Hero() {
   const { t } = useTranslation();
@@ -16,7 +16,7 @@ export function Hero() {
           transition={{ duration: 0.3 }}
           className="mx-3 text-4xl font-bold text-center text-white md:font-semibold sm:text-3xl md:text-start md:mx-0 md:text-4xl lg:text-6xl 2xl:text-7xl"
         >
-          {t("titleHero")}
+          {t("hero.titleHero")}
         </motion.h1>
         <br />
         <motion.p
@@ -25,19 +25,31 @@ export function Hero() {
           transition={{ duration: 0.7 }}
           className="text-xl text-center md:text-start text-secondary md:text-2xl lg:text-3xl 2xl:text-4xl"
         >
-          {t("descHero")}
+          {t("hero.descHero")}
         </motion.p>
         <br />
-        <Link to='/contact'>
-          <motion.button
+        <div className="flex gap-4">
+          <motion.a
+            href="/contact"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 2 }}
             className="mt-4 click btn-neroo-lg"
           >
-            {t("buttonHeroText")}
-          </motion.button>
-        </Link>
+            {t("hero.buttonHeroText")}
+          </motion.a>
+
+          <motion.a
+            href="/portfolio"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 2 }}
+            className="flex gap-2 mt-4 click btn-neroo-lg"
+          >
+            {t("hero.portfolio")}{" "}
+            <FaArrowRight className="my-auto arrow-anim" />
+          </motion.a>
+        </div>
       </div>
       <div className="relative w-full mt-8 md:mt-0">
         <Overlay />

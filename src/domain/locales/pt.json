@@ -5,9 +5,12 @@
   "testimonialsPageTitle": "Depoimentos",
   "contactPageTitle": "Entre em Contato",
   "contactText": "Entre em Contato",
-  "titleHero": "Agência de Marketing Digital Criativa",
+  "hero": {
+    "titleHero": "Agência de Marketing Digital Criativa",
   "descHero": "Conectamos marcas com seu público-alvo por meio de estratégias e conteúdo relevantes nos canais digitais.",
   "buttonHeroText": "Entre em contato",
+  "portfolio": "Portfólio"
+  },
   "companiesTitle": "Destaque",
   "companiesSubTitle": "Nossas Certificações",
   "expertise": {
@@ -59,5 +62,9 @@
     },
     "sendBtn": "Enviar",
     "sending": "Enviando"
+  }, 
+  "portfolio": {
+    "title": "Portfólio",
+    "desc": "Veja todos os nossos trabalhos realizados para algumas grandes marcas ao redor do mundo."
   }
 }
