@@ -93,7 +93,7 @@ export function Footer() {
         </motion.div>
         <motion.div
           initial={{ y: 90, opacity: 0 }}
-          transition={{ duration: 1, delay: 0.4 }}
+          transition={{ duration: .3, delay: 0.4 }}
           whileInView={{ opacity: 1, y: 0 }}
           className="w-full relative md:-mb-20 md:w-[90%] "
         >
