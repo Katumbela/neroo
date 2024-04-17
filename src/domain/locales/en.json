@@ -53,6 +53,9 @@
   "contact": {
     "title": "Get in Touch",
     "fill": "Fill the form below",
+    "info": "Your contact was received successfully, we will contact you as soon as possible. Thanks !",
+    "subtitle": "Have You Got A Project You’d Like to Discuss With Us?",
+    "descForm": "We’re excited to hear more, just give us your email and phone number and we will be in touch with a short questionnaire to help us discuss your project in more detail.",
     "form": {
       "name": "Full name",
       "email":"Email",
@@ -66,7 +69,8 @@
   "newsletter": {
     "title": "Subscribe to our Newsletter",
     "email": "Type your email",
-    "btnText": "Subscribe"
+    "btnText": "Subscribe",
+    "info": "Your email has been successfully added to our newsletter"
   },
   "portfolio": {
     "title": "Portfolio",

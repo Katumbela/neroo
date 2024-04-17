@@ -53,6 +53,9 @@
   "contact": {
     "title": "Entre em Contato",
     "fill": "Preencha o formulário abaixo",
+    "info": " Seu contacto foi recebido com sucess, entremos em contacto o mais breve possivel. Obrigado !",
+    "subtitle": "Você tem um projeto que gostaria de discutir conosco?",
+    "descForm": "Estamos entusiasmados em saber mais, basta nos fornecer seu e-mail e número de telefone e entraremos em contato com um breve questionário para nos ajudar a discutir seu projeto com mais detalhes.",
     "form": {
       "name": "Nome completo",
       "email":"Email",
@@ -63,6 +66,13 @@
     "sendBtn": "Enviar",
     "sending": "Enviando"
   }, 
+  
+  "newsletter": {
+    "title": "Subscreva à nossa Newsletter",
+    "email": "Insira seu e-mail",
+    "btnText": "Subscrever",
+    "info": "Seu email foi adicionado com sucesso a nossa newsletter"
+  },
   "portfolio": {
     "title": "Portfólio",
     "desc": "Veja todos os nossos trabalhos realizados para algumas grandes marcas ao redor do mundo."

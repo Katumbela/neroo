@@ -130,7 +130,7 @@ export function NewsLetter() {
             sent && <>
             <div className="relative p-4 mx-auto text-sm text-green-800 bg-green-100 border border-green-600 rounded-lg md:text-2xl md:w-7/12 2xl:text-2xl">
                 <span onClick={()=> setSent(false)} className="absolute top-0 text-2xl cursor-pointer right-2">&times;</span>
-                Seu email foi adicionado com sucesso a nossa newsletter
+                {t("newsletter.info")}
             </div>
             </>
         }

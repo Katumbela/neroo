@@ -91,12 +91,10 @@ export function Contact() {
       <div className="flex flex-col gap-10 md:flex-row">
         <motion.div className="w-full">
           <motion.h1 className="text-4xl font-bold text-white lg:text-6xl 2xl:text-[5.5rem]">
-            Have You Got A Project You’d Like to Discuss With Us?
+            {t("contact.subtitle")}
           </motion.h1>
           <motion.p className="mt-6 text-2xl text-secondary 2xl:text-4xl lg:text-3xl ">
-            We’re excited to hear more, just give us your email and phone number
-            and we will be in touch with a short questionnaire to help us
-            discuss your project in more detail.
+          {t("contact.descForm")}
           </motion.p>
         </motion.div>
         <motion.div className="grid items-center md:px-12 md:w-[70%] 2xl:w-[85%]">
@@ -149,7 +147,7 @@ export function Contact() {
                   >
                     &times;
                   </span>
-                  Seu contacto foi recebido com sucess, entremos em contacto o mais breve possivel. Obrigado !
+                 {t("contact.info")}
                 </div>
               </>
             )}
