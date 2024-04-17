@@ -57,6 +57,12 @@
       "subject": "Subject",
       "company": "Company name"
     },
-    "sendBtn": "Send"
+    "sendBtn": "Send",
+    "sending": "Sending"
+  },
+  "newsletter": {
+    "title": "Subscribe to our Newsletter",
+    "email": "Type your email",
+    "btnText": "Subscribe"
   }
 }

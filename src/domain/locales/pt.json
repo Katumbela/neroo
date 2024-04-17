@@ -57,6 +57,7 @@
       "subject": "Assunto",
       "company": "Nome da empresa"
     },
-    "sendBtn": "Enviar"
+    "sendBtn": "Enviar",
+    "sending": "Enviando"
   }
 }

@@ -1,16 +1,72 @@
-/* eslint-disable react-hooks/rules-of-hooks */
 //import { useTranslation } from "react-i18next";
 
 import { motion } from "framer-motion";
 import { FloatingBalls, Input, NavBar, TextArea } from "../../components";
-import { FaBuilding, FaEnvelope, FaRegEdit, FaUser } from "react-icons/fa";
+import {
+  FaBuilding,
+  FaEnvelope,
+  FaRegEdit,
+  FaSpinner,
+  FaUser,
+} from "react-icons/fa";
 
 import { BsSend } from "react-icons/bs";
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
+import axios from "axios";
 
 export function Contact() {
-  document.title = "Contact us | Neroo ";
   const { t } = useTranslation();
+  document.title = "Contact us | Neroo ";
+  const [name, setName] = useState("");
+  const [company, setCompany] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [description, setDescription] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async () => {
+    setLoading(true);
+
+    const url = "https://email-api-arotec-lilac.vercel.app/api/enviar-email";
+    const dadosEmail = {
+      to: "ja3328173@gmail.com",
+      subject: "Novo contato via formulário de contato da Neroo",
+      body: `
+        Nome: ${name} <br>
+        Empresa: ${company} <br>
+        Email: ${email} <br>
+        Assunto: ${subject} <br>
+        Descrição: ${description} <br>
+      `,
+      email: "ja3328173@gmail.com",
+      password: "pmjh fcjp wmrm fwmy",
+      emailFrom: "neroo-newsletter@gokside.site",
+      key: "Angola2020*",
+    };
+
+    try {
+      const resposta = await axios.post(url, dadosEmail, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
+      console.log("Email enviado com sucesso!", resposta);
+
+      setLoading(false);
+      // Limpar os campos após o envio
+      setName("");
+      setCompany("");
+      setEmail("");
+      setSubject("");
+      setDescription("");
+    } catch (erro) {
+      console.error("Erro ao enviar email:", erro);
+
+      setLoading(false);
+    }
+  };
 
   return (
     <div className="container relative">
@@ -36,26 +92,62 @@ export function Contact() {
         </motion.div>
         <motion.div className="grid items-center px-12 w-[50%]">
           <div className="my-auto">
-            {" "}
             <h1 className="text-xl font-semibold text-white">
               {t("contact.fill")}
             </h1>
             <br />
+
+            {/* Inputs para nome, empresa, email, assunto e descrição */}
             <div className="flex flex-col gap-4 md:flex-row">
-              <Input placeholder={t("contact.form.name")} icon={FaUser} />
+              <Input
+                placeholder={t("contact.form.name")}
+                value={name}
+                onChange={(e) => setName(e)}
+                icon={FaUser}
+              />
               <Input
                 placeholder={t("contact.form.company")}
+                value={company}
+                onChange={(e) => setCompany(e)}
                 icon={FaBuilding}
               />
             </div>
             <div className="flex flex-col gap-4 mt-4">
-              <Input placeholder={t("contact.form.email")} icon={FaEnvelope} />
-              <Input placeholder={t("contact.form.subject")} icon={FaRegEdit} />
-              <TextArea placeholder={t("contact.form.description")} />
+              <Input
+                placeholder={t("contact.form.email")}
+                value={email}
+                onChange={(e) => setEmail(e)}
+                icon={FaEnvelope}
+              />
+              <Input
+                placeholder={t("contact.form.subject")}
+                value={subject}
+                onChange={(e) => setSubject(e)}
+                icon={FaRegEdit}
+              />
+              <TextArea
+                placeholder={t("contact.form.description")}
+                value={description}
+                onChange={(e) => setDescription(e)}
+              />
             </div>
             <div className="mt-8 btns">
-              <button className="flex mx-auto click md:mx-0 btn-neroo-lg">
-                {t("contact.sendBtn")} <BsSend className="my-auto ms-2" />{" "}
+              <button
+                onClick={handleSubmit}
+                type="submit"
+                className="flex mx-auto click md:mx-0 btn-neroo-lg"
+                disabled={loading || email == "" || name == "" || company == ""}
+              >
+                {loading ? (
+                  <span className="flex gap-2 text-white">
+                    {" "}
+                    <FaSpinner className="my-auto animate animate-spin" />{" "}
+                    {t("contact.sending")}
+                  </span>
+                ) : (
+                  <span> {t("contact.sendBtn")}</span>
+                )}
+                {loading ? " " : <BsSend className="my-auto ms-2" />}
               </button>
             </div>
           </div>
@@ -74,7 +166,7 @@ export function Contact() {
       <br />
       <br />
       <br />
-      <br /> 
+      <br />
     </div>
   );
 }

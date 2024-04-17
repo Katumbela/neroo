@@ -8,6 +8,7 @@ import {
   Hero,
   LatestWorks,
   NavBar,
+  NewsLetter,
   Testimonials,
   Why,
 } from "../../components";
@@ -26,6 +27,7 @@ export function Home() {
       <Why />
       <LatestWorks />
       <Testimonials />
+      <NewsLetter />
       <Footer />
     </div>
   );
