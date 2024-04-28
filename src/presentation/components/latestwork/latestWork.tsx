@@ -32,8 +32,7 @@ export function LatestWorks() {
       id="works"
       className="px-2 my-8 m0d:px- md:my-16 lg:my-24"
       initial={{ y: 70 }}
-      transition={{ duration: 0.6 }}
-      whileInView={{ y: 0 }}
+      transition={{ duration: 0.6 }} 
     >
       <h1 className="text-2xl font-semibold text-white md:text-3xl lg:text-5xl">
         {t("latestWorks.title")}

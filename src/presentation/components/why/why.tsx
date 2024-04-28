@@ -13,9 +13,7 @@ export function Why() {
           <motion.div className="relative flex justify-center w-full md:items-center md:grid">
             <Overlay />
             <motion.img
-              initial={{ opacity: 0, scale: 0.7 }}
-              transition={{ duration: 0.3, delay: 0.4 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+          
               src={bg.bgSection}
               className="w-full mx-auto my-auto"
               alt=""
