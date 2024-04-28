@@ -1,6 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 //import { useTranslation } from "react-i18next";
 
+import React from "react";
 import {
   Companies,
   Expertise,
@@ -24,9 +25,9 @@ export function Home() {
       <FloatingBalls />
       <NavBar />
       <Hero />
-      <Companies />
       <Expertise />
       <Why />
+      <Companies />
       <LatestWorks />
       <Testimonials />
       <NewsLetter />
