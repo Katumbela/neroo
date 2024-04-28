@@ -7,8 +7,8 @@ import translationEN from '../locales/en.json';
 import translationPT from '../locales/pt.json';
 
   const setItem = () => {
-    localStorage.setItem("lang", "en")
-    return "en"
+    localStorage.setItem("lang", "pt")
+    return "pt"
   }
 // Configuração do i18next
 i18n
@@ -23,7 +23,7 @@ i18n
       },
     },
     lng: localStorage.getItem("lang") || setItem() , // idioma padrão
-    fallbackLng: 'en', // idioma de fallback
+    fallbackLng: 'pt', // idioma de fallback
     interpolation: {
       escapeValue: false, // reagir não escapar nossas seqüências de tradução
     },
