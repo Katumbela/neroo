@@ -1,3 +1,4 @@
+import React from "react";
 import { motion } from "framer-motion";
 import { regularIcons } from "../../../utils/imagesExporter";
 import { useTranslation } from "react-i18next";

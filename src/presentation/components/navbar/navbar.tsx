@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import logo from "../../../assets/imgs/logo design 1.jpg";

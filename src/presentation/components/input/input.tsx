@@ -1,3 +1,4 @@
+import React from "react";
 import { ElementType, ChangeEvent } from "react";
 
 export interface InputType {
