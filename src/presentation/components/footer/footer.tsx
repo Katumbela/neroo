@@ -11,6 +11,7 @@ export function Footer() {
   const { t } = useTranslation();
   const [showScrollButton, setShowScrollButton] = useState(false);
   const [writing, setW] = useState(false);
+  const [msg, setMsg] = useState("");
   const [showChat, setShowChat] = useState(false);
   const [chatMessages, setChatMessages] = useState([
     { id: 1, text: "Olá! Como posso ajudar você hoje?", sender: "bot" },
@@ -237,28 +238,21 @@ export function Footer() {
           </div>
           {/* Formulário de envio de mensagem */}
 
-          <form
-            onSubmit={(e) => {
-              e.preventDefault();
-              const message = e.target.elements.message.value;
-              handleSendMessage(message);
-              e.target.elements.message.value = "";
-            }}
-            className="flex gap-2 mx-3"
-          >
+          <div className="flex gap-2 mx-3">
             <input
               type="text"
               name="message"
+              onChange={(e) => setMsg(e.target.value)}
               placeholder="Digite sua mensagem..."
               className="w-full p-2 mb-2 border border-gray-300 rounded"
             />
-            <button
-              type="submit"
-              className="px-4 font-bold rounded-lg text-primary "
+            <span
+              onClick={() => msg ? handleSendMessage(msg) : null}
+              className="px-3 py-3 mb-3 -mt-[1px] font-bold rounded-lg click active:border-primary active:bg-transparent border bg-primary text-white "
             >
-              <BsSend />
-            </button>
-          </form>
+              <BsSend className="my-auto" />
+            </span>
+          </div>
         </motion.div>
       )}
     </div>
