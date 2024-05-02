@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { cardImages, mamadu, sergest } from "../../../utils/imagesExporter";
+import { mamadu, sergest } from "../../../utils/imagesExporter";
 import { abbreviateText } from "../../../utils/abreviate";
 
 export function LatestWorks() {
@@ -46,8 +46,8 @@ export function LatestWorks() {
               className="h-[250px] md:h-[320px] "
               style={{
                 background: `url('${card.img}')`,
-                backgroundSize: "cover", 
-                backgroundRepeat: 'no-repeat',
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
               }}
             ></div>
             <motion.div className="absolute inset-0 flex justify-center transition-opacity duration-300 bg-black bg-opacity-50 opacity-0 rounded-xl hover:opacity-100">
