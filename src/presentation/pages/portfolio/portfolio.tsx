@@ -50,7 +50,7 @@ export function PortFolio() {
         <br />
         <br />
 
-        <div className="">
+        <div className="mx-auto">
           <div className="text-center md:text-start">
             <h1 className="text-2xl text-white poppins-bold">
               {t("portfolio.mamadu.t")}
@@ -58,7 +58,7 @@ export function PortFolio() {
             <p className="text-white md:w-6/12">{t("portfolio.mamadu.desc")}</p>
           </div>
           <br />
-          <div className="relative flex flex-col gap-5 sm:gap-3 sm:flex-row">
+          <div className="relative flex flex-col justify-center gap-5 mx-auto sm:gap-3 sm:flex-row">
             <Overlay />
             <div>
               <motion.img
@@ -111,7 +111,7 @@ export function PortFolio() {
       <br />
       <br />
       <br />
-      <div className="">
+      <div className="mx-auto">
         <div className="text-center md:text-start">
           <h1 className="text-2xl text-white poppins-bold">
             {t("portfolio.sergest.t")}
@@ -119,7 +119,7 @@ export function PortFolio() {
           <p className="text-white md:w-6/12">{t("portfolio.sergest.desc")}</p>
         </div>
         <br />
-        <div className="relative flex flex-col gap-5 sm:gap-1 sm:flex-row">
+        <div className="relative flex flex-col justify-center w-full gap-5 mx-auto sm:gap-1 sm:flex-row">
           <Overlay />
           <div>
             <motion.img
