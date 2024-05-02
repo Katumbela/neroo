@@ -1,5 +1,6 @@
-import { brands } from "../../../utils/imagesExporter";
+import { marcas } from "../../../utils/imagesExporter";
 import { motion } from "framer-motion";
+import React from "react";
 import { useTranslation } from "react-i18next";
 
 export function Companies() {
@@ -27,9 +28,9 @@ export function Companies() {
           initial={{ opacity: 0, y: 50 }} // Define a posição inicial fora da viewport
             transition={{ duration: 0.5 }} // Duração da animação
         
-          whileInView={{ opacity: 1,   y: 0, transition: { staggerChildren: 0.2 } }} // Animar quando estiver visível, com um atraso entre os elementos
+          animate={{ opacity: 1,   y: 0, transition: { staggerChildren: 0.2 } }} // Animar quando estiver visível, com um atraso entre os elementos
         >
-          <img src={brands.allianz} alt="" />
+          <img src={marcas.marca1} alt="" />
         </motion.div>
         <motion.div
           className="card-company"
@@ -37,36 +38,43 @@ export function Companies() {
           
           transition={{ duration: 0.5, delay: 0.2 }} // Atraso de 0.2s em relação ao primeiro elemento
         
-          whileInView={{
+          animate={{
             opacity: 1,   y: 0,
             transition: { staggerChildren: 0.2, delayChildren: 0.2 },
           }} // Atraso de 0.2s entre os elementos
         >
-          <img src={brands.chase} alt="" />
+          <img src={marcas.marca2} alt="" />
         </motion.div>
         <motion.div
           className="card-company"
           initial={{ opacity: 0, y: 50 }}
            transition={{ duration: 0.5, delay: 0.4 }} // Atraso de 0.4s em relação ao primeiro elemento
-          whileInView={{
+          animate={{
             opacity: 1,  y: 0, 
             transition: { staggerChildren: 0.2, delayChildren: 0.4 },
           }} // Atraso de 0.4s entre os elementos
         >
-          <img src={brands.linkedin} alt="" />
+          <img src={marcas.marca3} alt="" />
         </motion.div>
-        <motion.div
+
+        {
+          /*
+          
+          <motion.div
           className="card-company"
           initial={{ opacity: 0, y: 50 }}
           transition={{ duration: 0.5, delay: 0.6 }} // Atraso de 0.6s em relação ao primeiro elemento
          
-         whileInView={{
+         animate={{
             opacity: 1,  y: 0 ,
             transition: { staggerChildren: 0.2, delayChildren: 0.6 },
           }} // Atraso de 0.6s entre os elementos
         >
-          <img src={brands.nyt} alt="" />
+          <img src={marcas.nyt} alt="" />
         </motion.div>
+          */
+        }
+        
       </motion.div>
     </motion.div>
   );

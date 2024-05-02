@@ -1,3 +1,4 @@
+import React from "react";
 import { motion } from "framer-motion";
 import { bg, regularIcons } from "../../../utils/imagesExporter";
 import { useTranslation } from "react-i18next";
@@ -52,17 +53,13 @@ export function Footer() {
         <motion.div className="grid items-center w-full mb-8 md:w-auto md:mb-0">
           <div className="text-center md:text-start">
             <motion.h1
-              initial={{ y: 80, opacity: 0 }}
-              transition={{ duration: 0.3 }}
-              whileInView={{ opacity: 1, y: 0 }}
+       
               className="text-3xl font-bold text-white md:text-5xl lg:text-6xl 2xl:text-7xl "
             >
               {t("footer.title")}
             </motion.h1>
             <motion.p
-              initial={{ y: 80, opacity: 0 }}
-              transition={{ duration: 0.2, delay: 0.2 }}
-              whileInView={{ opacity: 1, y: 0 }}
+      
               className="mt-4 text-base md:mt-6 md:text-xl lg:text-2xl text-secondary 2xl:text-3xl"
             >
               {t("footer.description")}
@@ -92,9 +89,7 @@ export function Footer() {
           </div>
         </motion.div>
         <motion.div
-          initial={{ y: 90, opacity: 0 }}
-          transition={{ duration: .3, delay: 0.4 }}
-          whileInView={{ opacity: 1, y: 0 }}
+      
           className="w-full relative md:-mb-20 md:w-[90%] "
         >
           <Overlay />

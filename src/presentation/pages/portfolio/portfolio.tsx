@@ -1,4 +1,5 @@
 //import { useTranslation } from "react-i18next";
+//import { useTranslation } from "react-i18next";
 
 import { abbreviateText } from "../../../utils/abreviate";
 import { cardImages } from "../../../utils/imagesExporter";
@@ -7,6 +8,7 @@ import { motion } from "framer-motion";
 
 import { useTranslation } from "react-i18next";
 import { Footer } from "../../components/footer/footer";
+import React from "react";
 
 export function PortFolio() {
   const { t } = useTranslation();

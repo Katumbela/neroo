@@ -1,3 +1,4 @@
+import React from "react";
 import { motion } from "framer-motion";
 import bgHero from "../../../assets/bg/bg-hero.png";
 import { useTranslation } from "react-i18next";

@@ -1,3 +1,5 @@
+import React from "react";
+
 export function FloatingBalls() {
   return (
     <div className="z-0 balls">

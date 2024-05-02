@@ -1,3 +1,4 @@
+import React from "react";
 
 import { motion } from "framer-motion";
 import logo from "../../../assets/imgs/logo design 1.jpg";
