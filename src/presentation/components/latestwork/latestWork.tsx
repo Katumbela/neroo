@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { cardImages } from "../../../utils/imagesExporter";
+import { cardImages, mamadu, sergest } from "../../../utils/imagesExporter";
 import { abbreviateText } from "../../../utils/abreviate";
 
 export function LatestWorks() {
@@ -10,21 +10,15 @@ export function LatestWorks() {
   const dummyCards = [
     {
       id: 1,
-      img: cardImages.cardImg1,
-      title: t("dummyCard.first.title"),
-      description: t("dummyCard.first.description"),
+      img: mamadu.m1,
+      title: t("portfolio.mamadu.t"),
+      description: t("portfolio.sergest.desc"),
     },
     {
       id: 2,
-      img: cardImages.cardImg2,
-      title: t("dummyCard.second.title"),
-      description: t("dummyCard.second.description"),
-    },
-    {
-      id: 3,
-      img: cardImages.cardImg3,
-      title: t("dummyCard.third.title"),
-      description: t("dummyCard.third.description"),
+      img: sergest.s1,
+      title: t("portfolio.sergest.t"),
+      description: t("portfolio.sergest.desc"),
     },
   ];
 
@@ -33,7 +27,7 @@ export function LatestWorks() {
       id="works"
       className="px-2 my-8 m0d:px- md:my-16 lg:my-24"
       initial={{ y: 70 }}
-      transition={{ duration: 0.6 }} 
+      transition={{ duration: 0.6 }}
     >
       <h1 className="text-2xl font-semibold text-white md:text-3xl lg:text-5xl">
         {t("latestWorks.title")}
@@ -49,11 +43,11 @@ export function LatestWorks() {
             transition={{ duration: 0.3 }}
           >
             <div
-              className="h-[250px] md:h-[320px] bg-cover"
+              className="h-[250px] md:h-[320px] "
               style={{
                 background: `url('${card.img}')`,
-                backgroundSize: "cover",
-                backgroundPosition: "center center",
+                backgroundSize: "cover", 
+                backgroundRepeat: 'no-repeat',
               }}
             ></div>
             <motion.div className="absolute inset-0 flex justify-center transition-opacity duration-300 bg-black bg-opacity-50 opacity-0 hover:opacity-100">
