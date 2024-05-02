@@ -9,7 +9,14 @@
   transition: all 0.3s ease-in;
   cursor: pointer;
 }
-
+.chat-messages {
+  height: 24rem; /* Altura fixa para a área de mensagens */
+  overflow-y: auto; /* Permitir rolar verticalmente */
+}
+ 
+.z-100 {
+  z-index: 10!important;
+} 
 body,
 html {
   scroll-behavior: smooth;
