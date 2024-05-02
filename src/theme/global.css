@@ -166,25 +166,26 @@ html {
 }
 
 .bgCover {
-  height: 12rem;
+  /*height: 18rem;*/
   width: 100% !important;
   background: linear-gradient(-182deg, #0d0d0d, #00000000),
-    url(../assets/bg/neroo_cover.jpg);
+    url(../assets/bg/bgCover.png);
   background-size: cover !important;
   background-repeat: no-repeat !important;
+  display: grid;
+  justify-content: center;
   border-bottom-left-radius: 60px !important;
   border-bottom-right-radius: 60px !important;
   align-items: center;
-  background-position: center;
 }
 
 @media (max-width: 690px) {
   .bgCover {
-    height: 12rem;
+    /*height: 12rem;*/
     margin-top: -2rem;
     width: 100% !important;
     background: linear-gradient(-182deg, #0d0d0d, #00000000),
-      url(../assets/bg/neroo_cover.jpg);
+      url(../assets/bg/bgCover.png);
     background-size: cover !important;
     background-repeat: no-repeat !important;
     border-bottom-left-radius: 0 !important;

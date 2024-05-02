@@ -76,6 +76,14 @@
   },
   "portfolio": {
     "title": "Portfólio",
-    "desc": "Veja todos os nossos trabalhos realizados para algumas grandes marcas ao redor do mundo."
+    "desc": "Veja todos os nossos trabalhos realizados para algumas grandes marcas ao redor do mundo.",
+    "mamadu": {
+      "t": "Mamadu - Social Media",
+      "desc": "Conectamos marcas com o seu público-alvo através de estratégias e conteúdo relevantes em canais digitais."
+    },
+    "sergest": {
+      "t": "Sergest - Social Media",
+      "desc": "Conectamos marcas com o seu público-alvo através de estratégias e conteúdo relevantes em canais digitais."
+    }
   }                    
 }

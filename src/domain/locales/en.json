@@ -74,7 +74,15 @@
     "info": "Your email has been successfully added to our newsletter"
   },
   "portfolio": {
-    "title": "Portfolio",
-    "desc": "See all of our works done for some great brands around the world"
+    "title": "Know our Portfolio",
+    "desc": "We connect brands with their target audience through relevant strategies and content on digital channels.",
+    "mamadu": {
+      "t": "Mamadu - Social Media",
+      "desc": "We connect brands with their target audience through relevant strategies and content on digital channels."
+    },
+    "sergest": {
+      "t": "Sergest - Social Media",
+      "desc": "We connect brands with their target audience through relevant strategies and content on digital channels."
+    }
   }
 }

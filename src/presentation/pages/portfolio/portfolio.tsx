@@ -2,8 +2,15 @@
 //import { useTranslation } from "react-i18next";
 
 import { abbreviateText } from "../../../utils/abreviate";
-import { cardImages } from "../../../utils/imagesExporter";
-import { BgCover, FloatingBalls, LinePrimary, NavBar, NewsLetter } from "../../components";
+import { cardImages, mamadu, sergest } from "../../../utils/imagesExporter";
+import {
+  BgCover,
+  FloatingBalls,
+  LinePrimary,
+  NavBar,
+  NewsLetter,
+  Overlay,
+} from "../../components";
 import { motion } from "framer-motion";
 
 import { useTranslation } from "react-i18next";
@@ -57,58 +64,138 @@ export function PortFolio() {
     <div className="container">
       <FloatingBalls />
       <NavBar />
-      <BgCover />
+      <div className="py-8 bgCover">
+        <div className="mx-auto text-center md:w-6/12">
+          <h1 className="text-6xl text-white poppins-extrabold">
+            {t("portfolio.title")}
+          </h1>
+          <p className="text-xl text-center text-white 2xl:text-3xl md:text-xl">
+            {" "}
+            {t("portfolio.desc")}
+          </p>
+          <br />
+          <motion.a
+            href="/contact"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 2 }}
+            className="mt-4 click btn-neroo-lg"
+          >
+            {t("hero.buttonHeroText")}
+          </motion.a>
+        </div>
+      </div>
       <br />
       <div className="container">
-        <h1 className="text-4xl font-semibold text-center text-white md:mt-10 2xl:text-6xl 2xl:font-bold">
-          {t("portfolio.title")}
-        </h1>
-        <p className="text-xl text-center text-white 2xl:text-3xl md:text-2xl">
-          {" "}
-          {t("portfolio.desc")}
-        </p>
         <LinePrimary />
         <br />
         <br />
-        <div className="grid grid-cols-1 gap-4 2xl:gap-8 md:grid-cols-2 lg:grid-cols-2">
-          {dummyCards.map((card) => (
-            <motion.div
-              key={card.id}
-              className="relative mt-[2rem] overflow-hidden"
-              whileHover={{ scale: 1.02 }}
-              initial={{ scale: 1 }}
-              transition={{ duration: 0.3 }}
-            >
-              <div
-                className="h-[250px] rounded-lg md:h-[320px 2xl:h-[500px] bg-cover"
-                style={{
-                  background: `url('${card.img}')`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center center",
-                }}
-              ></div>
-              <motion.div className="absolute inset-0 flex justify-center transition-opacity duration-300 bg-black bg-opacity-50 opacity-0 hover:opacity-100">
-                <button className="btn-view 2xl:mt-[15rem]">
-                  <span className=""> {t("latestWorks.viewProject")}</span>
-                </button>
-              </motion.div>
-              <div className="py-4">
-                <h2 className="text-xl font-semibold text-white md:text-2xl">
-                  {card.title}
-                </h2>
-                <p className="text-sm md:text-md text-secondary">
-                  {abbreviateText(card.description, 90)}
-                </p>
-              </div>
-            </motion.div>
-          ))}
+
+        <div className="">
+          <div className="text-center md:text-start">
+            <h1 className="text-2xl text-white poppins-bold">
+              {t("portfolio.mamadu.t")}
+            </h1>
+            <p className="text-white md:w-6/12">{t("portfolio.mamadu.desc")}</p>
+          </div>
+          <br />
+          <div className="relative flex flex-col gap-5 sm:gap-3 sm:flex-row">
+            <Overlay />
+            <div>
+              <motion.img
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.4 }}
+                src={mamadu.m1}
+                className="w-[95%]"
+                alt=""
+              />
+            </div>
+            <div className="grid grid-cols-2 gap-3 sm:gap-1">
+              <motion.img
+                src={mamadu.m2}
+                initial={{ opacity: 0, y: -60 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.2, delay: 0.3 }}
+                className="sm:w-[95%]"
+                alt=""
+              />
+              <motion.img
+                initial={{ opacity: 0, x: 60 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.2, delay: 0.3 }}
+                src={mamadu.m3}
+                className="sm:w-[95%]"
+                alt=""
+              />
+              <motion.img
+                initial={{ opacity: 0, x: -60 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.2, delay: 0.3 }}
+                src={mamadu.m4}
+                className="sm:w-[95%]"
+                alt=""
+              />
+              <motion.img
+                initial={{ opacity: 0, x: 60 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.4, delay: 0.3 }}
+                src={mamadu.m5}
+                className="sm:w-[95%]"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <div className="">
+        <div className="text-center md:text-start">
+          <h1 className="text-2xl text-white poppins-bold">
+            {t("portfolio.sergest.t")}
+          </h1>
+          <p className="text-white md:w-6/12">{t("portfolio.sergest.desc")}</p>
+        </div>
+        <br />
+        <div className="relative flex">
+          <Overlay />
+          <div>
+            <motion.img
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              src={sergest.s1}
+              alt=""
+              className="w-[95%]"
+            />
+          </div>
+          <div className="grid gap-5 my-auto">
+            <motion.img
+              initial={{ opacity: 0, x: 60 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.2, delay: 0.3 }}
+              src={sergest.s2}
+              className="w-[95%]"
+              alt=""
+            />{" "}
+            <motion.img
+              initial={{ opacity: 0, x: 60 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.2, delay: 0.6 }}
+              src={sergest.s3}
+              className="w-[95%]"
+              alt=""
+            />
+          </div>
         </div>
       </div>
       <br />
       <br />
       <NewsLetter />
       <br />
-
       <Footer />
     </div>
   );
