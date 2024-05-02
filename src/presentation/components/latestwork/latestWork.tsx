@@ -50,7 +50,7 @@ export function LatestWorks() {
                 backgroundRepeat: 'no-repeat',
               }}
             ></div>
-            <motion.div className="absolute inset-0 flex justify-center transition-opacity duration-300 bg-black bg-opacity-50 opacity-0 hover:opacity-100">
+            <motion.div className="absolute inset-0 flex justify-center transition-opacity duration-300 bg-black bg-opacity-50 opacity-0 rounded-xl hover:opacity-100">
               <button className="btn-view">
                 <span className=""> {t("latestWorks.viewProject")}</span>
               </button>
