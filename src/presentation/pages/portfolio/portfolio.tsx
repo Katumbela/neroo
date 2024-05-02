@@ -1,10 +1,8 @@
 //import { useTranslation } from "react-i18next";
 //import { useTranslation } from "react-i18next";
 
-import { abbreviateText } from "../../../utils/abreviate";
-import { cardImages, mamadu, sergest } from "../../../utils/imagesExporter";
+import { mamadu, sergest } from "../../../utils/imagesExporter";
 import {
-  BgCover,
   FloatingBalls,
   LinePrimary,
   NavBar,
@@ -19,47 +17,8 @@ import React from "react";
 
 export function PortFolio() {
   const { t } = useTranslation();
-  document.title = "Contact us | Neroo ";
-
-  const dummyCards = [
-    {
-      id: 1,
-      img: cardImages.cardImg1,
-      title: t("dummyCard.first.title"),
-      description: t("dummyCard.first.description"),
-    },
-    {
-      id: 2,
-      img: cardImages.cardImg2,
-      title: t("dummyCard.second.title"),
-      description: t("dummyCard.second.description"),
-    },
-    {
-      id: 3,
-      img: cardImages.cardImg3,
-      title: t("dummyCard.third.title"),
-      description: t("dummyCard.third.description"),
-    },
-    {
-      id: 4,
-      img: cardImages.cardImg1,
-      title: t("dummyCard.third.title"),
-      description: t("dummyCard.third.description"),
-    },
-    {
-      id: 5,
-      img: cardImages.cardImg2,
-      title: t("dummyCard.third.title"),
-      description: t("dummyCard.third.description"),
-    },
-    {
-      id: 6,
-      img: cardImages.cardImg3,
-      title: t("dummyCard.third.title"),
-      description: t("dummyCard.third.description"),
-    },
-  ];
-
+  document.title = t("portfolio.title") + " | Neroo ";
+ 
   return (
     <div className="container">
       <FloatingBalls />
