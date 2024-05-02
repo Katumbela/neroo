@@ -18,7 +18,7 @@ import React from "react";
 export function PortFolio() {
   const { t } = useTranslation();
   document.title = t("portfolio.title") + " | Neroo ";
- 
+
   return (
     <div className="container">
       <FloatingBalls />
@@ -66,7 +66,7 @@ export function PortFolio() {
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
                 src={mamadu.m1}
-                className="w-[95%]"
+                className="sm:w-[95%]"
                 alt=""
               />
             </div>
@@ -119,7 +119,7 @@ export function PortFolio() {
           <p className="text-white md:w-6/12">{t("portfolio.sergest.desc")}</p>
         </div>
         <br />
-        <div className="relative flex">
+        <div className="relative flex flex-col gap-5 sm:gap-1 sm:flex-row">
           <Overlay />
           <div>
             <motion.img
