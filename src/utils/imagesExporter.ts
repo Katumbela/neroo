@@ -16,6 +16,8 @@ import cardImg1 from "../assets/imgs/Pattern-fill-a5f7b9f695af0c074872e10a39492d
 import cardImg2 from "../assets/imgs/Pattern-fill-e6b5de8e170a2e8acaec98979d01feb6.jpg";
 import cardImg3 from "../assets/imgs/Pattern-fill-e37c23a0f5211e59dd2a24560c4838a3.jpg";
 import Telephone from "../assets/icons/regular/Icon awesome-phone-alt.png";
+import notFound from "../assets/icons/pages/no2.jpg";
+import logo from "../assets/imgs/logo design 1.jpg";
 
 export const brands = {
   allianz,
@@ -45,4 +47,9 @@ export const cardImages = {
   cardImg1,
   cardImg2,
   cardImg3,
+};
+
+export const pages = {
+  notFound,
+  logo,
 };

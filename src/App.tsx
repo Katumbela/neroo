@@ -2,9 +2,8 @@
 import React, { useEffect, useState } from "react";
 import "./index.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Home } from "./presentation/pages";
+import { Home, NotFound, Contact, PortFolio } from "./presentation/pages";
 import { Preloader } from "./presentation/components";
-import { Contact, PortFolio } from "./presentation/pages";
 import CookieConsent from "react-cookie-consent";
 import Cookies from "js-cookie";
 import { useTranslation } from "react-i18next";
@@ -40,6 +39,7 @@ const App: React.FC = () => {
             path="/portfolio"
             element={isLoading2 ? <Preloader /> : <PortFolio />}
           />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
 
