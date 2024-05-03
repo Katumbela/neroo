@@ -171,12 +171,6 @@ export function Footer() {
               <LanguageSwitcher />
             </div>
             {/* Botão do Chat */}
-            <motion.button
-              onClick={handleToggleChat}
-              className="px-4 py-2 mt-6 text-white rounded-lg shadow-lg bg-primary hover:bg-primary-dark click"
-            >
-              {showChat ? "Hide Chat" : "Show Chat"}
-            </motion.button>
           </div>
         </motion.div>
         <motion.div className="w-full relative md:-mb-20 md:w-[90%]">
@@ -247,7 +241,7 @@ export function Footer() {
               className="w-full p-2 mb-2 border border-gray-300 rounded"
             />
             <span
-              onClick={() => msg ? handleSendMessage(msg) : null}
+              onClick={() => (msg ? handleSendMessage(msg) : null)}
               className="px-3 py-3 mb-3 -mt-[1px] font-bold rounded-lg click active:border-primary active:bg-transparent border bg-primary text-white "
             >
               <BsSend className="my-auto" />
