@@ -63,7 +63,7 @@ export function Testimonials() {
       name: "Pedro Santos",
       content:
         "Trabalhar com a Neroo foi uma experiência incrível. Eles têm uma compreensão profunda das tendências do mercado e foram capazes de desenvolver uma estratégia personalizada que impulsionou nosso crescimento exponencialmente.",
-      title: "Fundador ",
+      title: "Fundador",
     },
     {
       id: 3,
