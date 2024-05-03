@@ -25,6 +25,7 @@ export function Footer() {
   }, [chatMessages]);
 
   const handleSendMessage = (message: string) => {
+    setMsg("");
     setW(true);
     // Adiciona a mensagem do usuário à lista de mensagens
     setChatMessages((prevMessages) => [
