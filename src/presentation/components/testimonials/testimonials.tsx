@@ -42,6 +42,14 @@ export function Testimonials() {
   };
   const testimonials = [
     {
+      id: 4,
+      img: user,
+      name: "Rafael Costa",
+      content:
+        "A Neroo realmente superou todas as nossas expectativas. Sua abordagem inovadora e criativa nos ajudou a alcançar um público totalmente novo, e sua equipe altamente profissional tornou todo o processo suave e eficiente.",
+      title: "Gerente de Produto ",
+    },
+    {
       id: 1,
       img: pictures.pic1,
       name: "Marina Silva",
@@ -65,15 +73,6 @@ export function Testimonials() {
         "Desde que começamos a trabalhar com a Neroo, nossas campanhas de marketing nunca foram as mesmas. Eles são mestres em otimizar os gastos com publicidade e sempre entregam resultados tangíveis. Não poderíamos estar mais satisfeitos!",
       title: "Diretora de Marketing ",
     },
-    {
-      id: 4,
-      img: user,
-      name: "Rafael Costa",
-      content:
-        "A Neroo realmente superou todas as nossas expectativas. Sua abordagem inovadora e criativa nos ajudou a alcançar um público totalmente novo, e sua equipe altamente profissional tornou todo o processo suave e eficiente.",
-      title: "Gerente de Produto ",
-    },
-    // Adicione mais depoimentos conforme necessário
   ];
 
   return (
