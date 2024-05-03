@@ -50,10 +50,12 @@ export function LatestWorks() {
                 backgroundRepeat: "no-repeat",
               }}
             ></div>
-            <motion.div className="absolute inset-0 flex justify-center transition-opacity duration-300 bg-black bg-opacity-50 opacity-0 rounded-xl hover:opacity-100">
+            <motion.div className="absolute inset-0 flex justify-center transition-opacity duration-300 opacity-0 bg-opacity-20 bg-primary rounded-xl hover:opacity-100">
+              {/*
               <button className="btn-view">
                 <span className=""> {t("latestWorks.viewProject")}</span>
               </button>
+              */}
             </motion.div>
             <div className="py-4">
               <h2 className="text-xl font-semibold text-white md:text-2xl">
