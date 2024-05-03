@@ -52,11 +52,11 @@ const App: React.FC = () => {
         buttonStyle={{ background: "#E02200", color: "#fff", fontSize: "13px" }}
         expires={10}
         onAccept={() => {
-          Cookies.set("theme", "dark", { expires: 365 }); // Tema escuro
-          Cookies.set("userBehavior", "data", { expires: 365 }); // Dados de comportamento do usuário
+          Cookies.set("theme", "dark", { expires: 3 }); // Tema escuro
+          Cookies.set("userBehavior", "data", { expires: 2 }); // Dados de comportamento do usuário
 
           // Marcar o aviso de cookie como aceito
-          Cookies.set("cookieAccepted", "true", { expires: 365 });
+          Cookies.set("cookieAccepted", "true", { expires: 2 });
         }}
       >
         {t("cookieText")}
