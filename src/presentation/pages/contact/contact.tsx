@@ -39,7 +39,7 @@ export function Contact() {
 
     const url = "https://email-api-arotec-lilac.vercel.app/api/enviar-email";
     const dadosEmail = {
-      to: "ja3328173@gmail.com",
+      to: "neroomarketing@gmail.com",
       subject: "Novo contato via formulário de contato da Neroo",
       body: `
         Nome: ${name} <br>
@@ -95,7 +95,7 @@ export function Contact() {
             {t("contact.subtitle")}
           </motion.h1>
           <motion.p className="mt-6 text-2xl text-secondary 2xl:text-4xl lg:text-3xl ">
-          {t("contact.descForm")}
+            {t("contact.descForm")}
           </motion.p>
         </motion.div>
         <motion.div className="grid items-center md:px-12 md:w-[70%] 2xl:w-[85%]">
@@ -148,7 +148,7 @@ export function Contact() {
                   >
                     &times;
                   </span>
-                 {t("contact.info")}
+                  {t("contact.info")}
                 </div>
               </>
             )}
@@ -186,7 +186,7 @@ export function Contact() {
       </div>
       <br />
       <br />
-      <NewsLetter /> 
+      <NewsLetter />
       <Footer />
     </div>
   );

@@ -52,13 +52,12 @@ export function NewsLetter() {
 
     const url = "https://email-api-arotec-lilac.vercel.app/api/enviar-email";
     const dadosEmail = {
-      to: "ja3328173@gmail.com",
+      to: "neroomarketing@gmail.com",
       subject: "Novo inscrito na newsletter da Neroo",
       body: `Novo e-mail cadastrado na newsletter Neroo: ${email}`,
       email: "ja3328173@gmail.com",
       password: "pmjh fcjp wmrm fwmy",
-      emailFrom:
-        "neroo-newsletter@gokside.site",
+      emailFrom: "neroo-newsletter@gokside.site",
       key: "Angola2020*",
     };
 
@@ -70,7 +69,7 @@ export function NewsLetter() {
       });
 
       console.log("Email enviado com sucesso!", resposta);
-      setSent(true)
+      setSent(true);
       setLoading(false);
     } catch (erro: unknown) {
       console.error("Erro ao enviar email:", erro);
@@ -107,7 +106,7 @@ export function NewsLetter() {
             disabled={loading}
           >
             {loading ? (
-              <CgSpinner className="text-2xl text-white animate-spin animate"/>
+              <CgSpinner className="text-2xl text-white animate-spin animate" />
             ) : (
               <>
                 <span className="hidden md:flex">
@@ -127,14 +126,19 @@ export function NewsLetter() {
         transition={{ duration: 0.1, delay: 0.4 }}
         whileInView={{ opacity: 1, y: 0 }}
       >
-        {
-            sent && <>
+        {sent && (
+          <>
             <div className="relative p-4 mx-auto text-sm text-green-800 bg-green-100 border border-green-600 rounded-lg md:text-2xl md:w-7/12 2xl:text-2xl">
-                <span onClick={()=> setSent(false)} className="absolute top-0 text-2xl cursor-pointer right-2">&times;</span>
-                {t("newsletter.info")}
+              <span
+                onClick={() => setSent(false)}
+                className="absolute top-0 text-2xl cursor-pointer right-2"
+              >
+                &times;
+              </span>
+              {t("newsletter.info")}
             </div>
-            </>
-        }
+          </>
+        )}
         <LinePrimary />
       </motion.div>
     </motion.div>
