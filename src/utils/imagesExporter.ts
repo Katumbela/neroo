@@ -29,6 +29,11 @@ import m2 from "../assets/portfolio/mamadu/Atendimento e entrega op 02 1.png";
 import m3 from "../assets/portfolio/mamadu/Atendimento e entrega op 02 2.png";
 import m4 from "../assets/portfolio/mamadu/Atendimento e entrega op 02 3.png";
 import m5 from "../assets/portfolio/mamadu/Atendimento e entrega op 02 4.png";
+import pic1 from "../assets/imgs/pics/photo-1494790108377-be9c29b29330.avif";
+import pic2 from "../assets/imgs/pics/photo-1544168190-79c17527004f.avif";
+import pic3 from "../assets/imgs/pics/photo-1566753323558-f4e0952af115.avif";
+import pic5 from "../assets/imgs/pics/Captura de ecrã 2024-05-03 112810.png";
+import pic4 from "../assets/imgs/pics/portrait-father-his-backyard_23-2149489567.avif";
 
 export const brands = {
   allianz,
@@ -83,4 +88,12 @@ export const mamadu = {
   m3,
   m4,
   m5,
+};
+
+export const pictures = {
+  pic1,
+  pic2,
+  pic3,
+  pic5,
+  pic4,
 };

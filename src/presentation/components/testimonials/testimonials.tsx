@@ -3,6 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import user from "../../../assets/imgs/Pattern-fill-a10d0ecff0ddaba6c738546ff30db98b.jpg";
 import Slider from "react-slick";
+import { pictures } from "../../../utils/imagesExporter";
 
 export function Testimonials() {
   const settings = {
@@ -39,44 +40,47 @@ export function Testimonials() {
       },
     ],
   };
-
   const testimonials = [
     {
       id: 1,
-      img: user,
-      name: "John Doe",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      title: "CEO, Company A",
+      img: pictures.pic1,
+      name: "Marina Silva",
+      content:
+        "Estou impressionada com o impacto que a equipe da Neroo trouxe para o nosso negócio. Eles não apenas aumentaram nossa presença online, mas também aumentaram significativamente nossas conversões. Altamente recomendado!",
+      title: "CEO ",
     },
     {
       id: 2,
-      img: user,
-      name: "Jane Doe",
+      img: pictures.pic3,
+      name: "Pedro Santos",
       content:
-        "Nulla facilisi. Donec pretium, libero eget malesuada fermentum.",
-      title: "CTO, Company B",
+        "Trabalhar com a Neroo foi uma experiência incrível. Eles têm uma compreensão profunda das tendências do mercado e foram capazes de desenvolver uma estratégia personalizada que impulsionou nosso crescimento exponencialmente.",
+      title: "Fundador ",
     },
     {
       id: 3,
-      img: user,
-      name: "Jane Doe",
+      img: pictures.pic5,
+      name: "Carla Oliveira",
       content:
-        "Nulla facilisi. Donec pretium, libero eget malesuada fermentum.",
-      title: "CTO, Company B",
+        "Desde que começamos a trabalhar com a Neroo, nossas campanhas de marketing nunca foram as mesmas. Eles são mestres em otimizar os gastos com publicidade e sempre entregam resultados tangíveis. Não poderíamos estar mais satisfeitos!",
+      title: "Diretora de Marketing ",
     },
     {
       id: 4,
       img: user,
-      name: "Jane Doe",
+      name: "Rafael Costa",
       content:
-        "Nulla facilisi. Donec pretium, libero eget malesuada fermentum.",
-      title: "CTO, Company B",
+        "A Neroo realmente superou todas as nossas expectativas. Sua abordagem inovadora e criativa nos ajudou a alcançar um público totalmente novo, e sua equipe altamente profissional tornou todo o processo suave e eficiente.",
+      title: "Gerente de Produto ",
     },
     // Adicione mais depoimentos conforme necessário
   ];
 
   return (
-    <div id="testimonials" className="px-6 py-16 my-16 md:px-1 slider-container">
+    <div
+      id="testimonials"
+      className="px-6 py-16 my-16 md:px-1 slider-container"
+    >
       <Slider {...settings}>
         {testimonials.map((testimonial) => (
           <div key={testimonial.id} className="mx-[2rem]">
