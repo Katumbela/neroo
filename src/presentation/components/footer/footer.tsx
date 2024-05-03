@@ -175,7 +175,10 @@ export function Footer() {
         </motion.div>
         <motion.div className="w-full relative md:-mb-20 md:w-[90%]">
           <Overlay />
-          <img
+          <motion.img
+            initial={{ y: 120, opacity: 0.2 }}
+            transition={{ duration: 0.2, delay: 0.4 }}
+            whileInView={{ y: 0, opacity: 1 }}
             src={bg.bgMarketing}
             alt="Marketing Background"
             className="w-full h-auto"
