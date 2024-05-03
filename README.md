@@ -23,4 +23,4 @@ npm run dev
 Ou pode simplesmente baixar ele clicando em download. e rodar o projecto 
 
 
--- made entirelly by [https://www.linkedin.com/in/joao-afonso-katumbela/]Katumbela
+-- made entirelly by [Katumbela](https://www.linkedin.com/in/joao-afonso-katumbela)
