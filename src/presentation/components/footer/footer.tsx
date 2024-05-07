@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { FaArrowUp, FaRobot, FaTimes } from "react-icons/fa";
+import { FaArrowUp, FaRobot, FaTimes, FaWhatsapp } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import { bg, regularIcons } from "../../../utils/imagesExporter";
 import { Overlay } from "../overlay/overlay";
@@ -203,13 +203,22 @@ export function Footer() {
           animate={{ opacity: 1, y: 0 }}
           className="fixed z-50  bg-white rounded-xl shadow-xl w-[22rem] h-[32rem] bottom-16 right-6"
         >
-          <div className="relative p-3 text-white shadow-lg h-[5rem] bg-primary rounded-t-xl">
-            <h2 className="my-auto mb-2 text-2xl font-bold ">
-              Assistente virtual
-            </h2>
-            {writing && (
-              <span className="-mt-2 text-sm text-white">Escrevendo...</span>
-            )}
+          <div className="relative p-3 text-white shadow-lg h-[4.5rem] bg-primary rounded-t-xl">
+            <div className="flex">
+              <div>
+                <h2 className="my-auto mb-2 text-2xl font-bold ">
+                  Assistente virtual
+                </h2>
+                {writing && (
+                  <span className="mt-[-1rem] text-sm text-white">
+                    Escrevendo...
+                  </span>
+                )}
+              </div>
+              <a target="__blank" className="mt-1.5 text-2xl ms-4 click" href="https://wa.me/351935913073">
+                <FaWhatsapp />
+              </a>
+            </div>
             <FaTimes
               onClick={handleToggleChat}
               className="absolute text-2xl top-3 right-3"
