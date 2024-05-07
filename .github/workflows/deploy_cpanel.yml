@@ -30,8 +30,7 @@ jobs:
       with:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USER }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: dist/  # Especifica a pasta local que você deseja enviar via FTP
+        password: ${{ secrets.FTP_PASSWORD }} 
         exclude: |
           **/.git*
           **/.git*/**
