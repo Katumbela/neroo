@@ -29,3 +29,8 @@ jobs:
         username: ${{ secrets.FTP_USER }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: dist/
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          ./dist/
