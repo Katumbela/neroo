@@ -22,15 +22,9 @@ jobs:
       run: find dist/ -print
       
     - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-      
+      uses: SamKirkland/FTP-Deploy-Action@4.1.0
       with:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USER }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: dist/
-        exclude: |
-          **/.git*
-          **/.git*/**
-          **/node_modules/**
-          ./dist/
