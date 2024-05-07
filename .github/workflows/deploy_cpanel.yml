@@ -1,41 +1,30 @@
-name: Deploy to cPanel via FTP
-
-on:
-  push:
-    branches:
-      - main  # Altere para o nome da sua branch principal
-
+on: push
+name: 🚀 Deploy website on push
 jobs:
-  deploy:
-    name: Deploy
+  web-deploy:
+    name: 🎉 Deploy
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v2
 
-    - name: Setup Node.js V20
+    - name: Use Node.js 14
       uses: actions/setup-node@v2
       with:
-        node-version: '20'  # Altere para a versão do Node.js que você está usando
-
-    - name: Install dependencies
-      run: npm install
-
-    - name: Build project
-      run: npm run build
-
-    - name: Deploy to cPanel via FTP
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        node-version: '14'
+      
+    - name: 🔨 Build Project
+      run: |
+        npm install
+        npm run build
+    
+    - name: List output files
+      run: find build/ -print
+      
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.1.0
       with:
         server: ${{ secrets.FTP_SERVER }}
-        username: ${{ secrets.FTP_USER }}
-        password: ${{ secrets.FTP_PASSWORD }} 
-        server-dir: public_html/  # Altere para o diretório no cPanel onde deseja fazer o upload
-        
-        exclude: |
-          **/.git*
-          **/.git*/**
-          **/node_modules/**
-          src/ 
-          
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: build/
