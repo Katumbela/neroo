@@ -31,5 +31,3 @@ jobs:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USER }}
         password: ${{ secrets.FTP_PASSWORD }}
-        server-dir: /  # Altere para o diretório no cPanel onde deseja fazer o upload
-        local-dir: ./dist/  # Especifica a pasta local que você deseja enviar via FTP
