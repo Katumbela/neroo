@@ -14,7 +14,6 @@ import {
   FaBuilding,
   FaEnvelope,
   FaMailBulk,
-  FaPhone,
   FaRegEdit,
   FaSpinner,
   FaUser,
