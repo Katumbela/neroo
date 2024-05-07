@@ -13,6 +13,8 @@ import {
 import {
   FaBuilding,
   FaEnvelope,
+  FaMailBulk,
+  FaPhone,
   FaRegEdit,
   FaSpinner,
   FaUser,
@@ -185,6 +187,15 @@ export function Contact() {
         */}
       </div>
       <br />
+
+      <div className="text-start">
+        <div className="flex gap-4">
+          <FaMailBulk className="text-3xl text-white " />
+          <span className="my-auto text-2xl text-white">
+            <a href="mailto:comercial@neroo.pt">comercial@neroo.pt </a>
+          </span>
+        </div>
+      </div>
       <br />
       <NewsLetter />
       <Footer />
