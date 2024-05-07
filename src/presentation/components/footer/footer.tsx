@@ -221,7 +221,7 @@ export function Footer() {
             </div>
             <FaTimes
               onClick={handleToggleChat}
-              className="absolute text-2xl top-3 right-3"
+              className="absolute text-2xl cursor-pointer top-3 right-3"
             />
           </div>
           {/* Renderização das mensagens do chat */}
@@ -251,11 +251,11 @@ export function Footer() {
               name="message"
               onChange={(e) => setMsg(e.target.value)}
               placeholder="Digite sua mensagem..."
-              className="w-full p-2 mb-2 border border-gray-300 rounded"
+              className="w-full px-2 mb-2 transition-all border rounded focus:border-primary "
             />
             <span
               onClick={() => (msg ? handleSendMessage(msg) : null)}
-              className="px-3 py-3 mb-3 -mt-[1px] font-bold rounded-lg click active:border-primary active:bg-transparent border bg-primary text-white "
+              className="px-3 outline-none py-3 mb-3 -mt-[1px] font-bold rounded-lg click active:border-primary active:bg-transparent border bg-primary text-white "
             >
               <BsSend className="my-auto" />
             </span>
