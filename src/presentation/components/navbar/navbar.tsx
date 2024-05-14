@@ -23,7 +23,7 @@ export function NavBar() {
   return (
     <>
       <motion.div
-        className="z-50 z-all justify-between hidden py-5 md:flex"
+        className="justify-between hidden py-5 z-500 z-all md:flex"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}

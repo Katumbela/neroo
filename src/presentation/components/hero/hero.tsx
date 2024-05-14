@@ -59,7 +59,7 @@ export function Hero() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
           src={bgHero}
-          className="w-full md:w-auto rounded-[50px]"
+          className="w-full -z-10 md:w-auto rounded-[50px]"
           alt="Hero Background"
         />
       </div>

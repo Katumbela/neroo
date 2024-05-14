@@ -54,6 +54,10 @@ html {
   z-index: 50 !important;
 }
 
+.z-500 {
+  z-index: 99999!important;
+}
+
 .preloader-container {
   display: flex;
   flex-direction: column;
