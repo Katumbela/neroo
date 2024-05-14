@@ -109,12 +109,12 @@ export function Testimonials() {
 
       {testimonials.map((testimonial) => (
         <Section key={testimonial.id}>
-          <div className="  h-[15rem] rounded-lg grid items-center bg-white/10">
+          <div className="  h-[18rem] rounded-lg grid items-center bg-white/10">
             <div className="text-white p-4  w-[3rem] testimonial">
               <div className="flex flex-col justify-center gap-3">
                 <img
                   src={testimonial.img}
-                  className="w-[5.5em] h-[5.5em] mx-auto rounded-full"
+                  className="w-[5.5em] border-2 border-primary shadow-md shadow-primary h-[5.5em] mx-auto rounded-full"
                   alt=""
                 />
                 <div className="text-center">
