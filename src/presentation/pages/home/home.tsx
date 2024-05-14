@@ -7,18 +7,16 @@ import {
   Expertise,
   FloatingBalls,
   Hero,
-  LatestWorks,
+  //LatestWorks,
   NavBar,
   NewsLetter,
   Testimonials,
-  Why,
+ // Why,
 } from "../../components";
-import { Footer } from "../../components/footer/footer"; 
-
+import { Footer } from "../../components/footer/footer";
 
 export function Home() {
   document.title = "Welcome | Neroo ";
-  
 
   return (
     <div className="container relative">
@@ -26,19 +24,21 @@ export function Home() {
       <NavBar />
       <Hero />
       <Expertise />
-      <Why />
+      {/*
+           <Why />
+      */}
       <Companies />
-      <LatestWorks />
+      {/*
+          <LatestWorks />
+      */}
       <Testimonials />
       <NewsLetter />
       <Footer />
 
-      {
-        /*
+      {/*
         
         
-        */
-      }
+        */}
     </div>
   );
 }

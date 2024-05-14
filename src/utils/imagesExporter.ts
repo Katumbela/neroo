@@ -20,6 +20,8 @@ import cardImg2 from "../assets/imgs/Pattern-fill-e6b5de8e170a2e8acaec98979d01fe
 import cardImg3 from "../assets/imgs/Pattern-fill-e37c23a0f5211e59dd2a24560c4838a3.jpg";
 import Telephone from "../assets/icons/regular/Icon awesome-phone-alt.png";
 import notFound from "../assets/icons/pages/no2.jpg";
+import emmanuel from "../assets/logos/1703799225668.jpg";
+import user from "../assets/logos/24-248253_user-profile-default-image-png-clipart-png-download.png";
 import logo from "../assets/imgs/logo design 1.jpg";
 import s1 from "../assets/portfolio/sergest/Realizar compras mamadu 2.png";
 import s2 from "../assets/portfolio/sergest/Banner 02 1.png";
@@ -96,4 +98,6 @@ export const pictures = {
   pic3,
   pic5,
   pic4,
+  user,
+  emmanuel,
 };

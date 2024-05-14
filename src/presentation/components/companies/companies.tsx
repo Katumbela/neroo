@@ -8,7 +8,7 @@ export function Companies() {
 
   return (
     <motion.div
-      className="py-6 pt-24 mb-8 sm:pt-4"
+      className="py-6 pt-24 mt-[8rem] mb-8 sm:pt-4"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
     >

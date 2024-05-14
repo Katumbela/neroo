@@ -13,13 +13,23 @@
   height: 24rem; /* Altura fixa para a área de mensagens */
   overflow-y: auto; /* Permitir rolar verticalmente */
 }
- 
+
 .z-100 {
-  z-index: 10!important;
-} 
+  z-index: 10 !important;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden !important;
+}
+
 body,
 html {
   scroll-behavior: smooth;
+}
+
+.z-global {
+  z-index: 99999 !important;
 }
 
 .hover-anim:after {

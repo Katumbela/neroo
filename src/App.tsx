@@ -50,13 +50,13 @@ const App: React.FC = () => {
         style={{ background: "#2B373B" }}
         contentClasses="container"
         buttonStyle={{ background: "#E02200", color: "#fff", fontSize: "13px" }}
-        expires={10}
+        expires={1}
         onAccept={() => {
-          Cookies.set("theme", "dark", { expires: 3 }); // Tema escuro
-          Cookies.set("userBehavior", "data", { expires: 2 }); // Dados de comportamento do usuário
+          Cookies.set("theme", "dark", { expires: 1}); // Tema escuro
+          Cookies.set("userBehavior", "data", { expires: 1 }); // Dados de comportamento do usuário
 
           // Marcar o aviso de cookie como aceito
-          Cookies.set("cookieAccepted", "true", { expires: 2 });
+          Cookies.set("cookieAccepted", "true", { expires: 1 });
         }}
       >
         {t("cookieText")}

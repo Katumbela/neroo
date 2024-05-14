@@ -6,6 +6,7 @@ import { bg, regularIcons } from "../../../utils/imagesExporter";
 import { Overlay } from "../overlay/overlay";
 import { LanguageSwitcher } from "../lang-switcher/languageSwitcher";
 import { BsSend } from "react-icons/bs";
+import { Section } from "../section/section";
 
 export function Footer() {
   const { t } = useTranslation();
@@ -129,8 +130,7 @@ export function Footer() {
     <div className="relative mt-12 md:mt-24 lg:mt-32">
       <motion.p
         onClick={handleToggleChat}
-        initial={{ opacity: 0, y: 60 }}
-        transition={{ duration: 0.3, delay: 0.6 }}
+        initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         className={`fixed z-100 focus-within:border-primary p-3 text-4xl border-2 rounded-full border-white/50 hover:text-primary hover:border-white hover:bg-white text-primary bg-white ${
           showScrollButton ? "bottom-20" : "bottom-8"
@@ -149,25 +149,27 @@ export function Footer() {
             <motion.p className="mt-4 text-base md:mt-6 md:text-xl lg:text-2xl text-secondary 2xl:text-3xl">
               {t("footer.description")}
             </motion.p>
-            <motion.div className="flex md:mb-[2rem] justify-center md:justify-start flex-col md:flex-row gap-4 mt-6 md:mt-10">
-              <a href={"/contact"} className="click btn-neroo-lg">
-                {t("contactText")}
-              </a>{" "}
-              <span className="hidden my-auto text-white md:inline-block">
-                Or
-              </span>{" "}
-              <a
-                href={`tel:${t("footer.tel")}`}
-                className="flex items-center justify-center gap-3 mt-2 text-white md:justify-start md:mt-0 click"
-              >
-                <img
-                  className="w-6 h-6"
-                  src={regularIcons.Telephone}
-                  alt="Telephone Icon"
-                />{" "}
-                <span>{t("footer.tel")}</span>
-              </a>
-            </motion.div>
+            <Section>
+              <motion.div className="flex md:mb-[2rem] justify-center md:justify-start flex-col md:flex-row gap-4 mt-6 md:mt-10">
+                <a href={"/contact"} className="click btn-neroo-lg">
+                  {t("contactText")}
+                </a>{" "}
+                <span className="hidden my-auto text-white md:inline-block">
+                  Or
+                </span>{" "}
+                <a
+                  href={`tel:${t("footer.tel")}`}
+                  className="flex items-center justify-center gap-3 mt-2 text-white md:justify-start md:mt-0 click"
+                >
+                  <img
+                    className="w-6 h-6"
+                    src={regularIcons.Telephone}
+                    alt="Telephone Icon"
+                  />{" "}
+                  <span>{t("footer.tel")}</span>
+                </a>
+              </motion.div>
+            </Section>
             <div className="">
               <LanguageSwitcher />
             </div>
@@ -176,14 +178,15 @@ export function Footer() {
         </motion.div>
         <motion.div className="w-full relative md:-mb-20 md:w-[90%]">
           <Overlay />
-          <motion.img
-            initial={{ y: 120, opacity: 0.2 }}
-            transition={{ duration: 0.2, delay: 0.4 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            src={bg.bgMarketing}
-            alt="Marketing Background"
-            className="w-full h-auto"
-          />
+          <Section>
+            <motion.img
+              initial={{ opacity: 0.2 }}
+              animate={{ opacity: 1 }}
+              src={bg.bgMarketing}
+              alt="Marketing Background"
+              className="w-full h-auto"
+            />
+          </Section>
         </motion.div>
       </div>
       {showScrollButton && (
@@ -199,7 +202,6 @@ export function Footer() {
       {showChat && (
         <motion.div
           initial={{ opacity: 0, y: 60 }}
-          transition={{ duration: 0.3, delay: 0.6 }}
           animate={{ opacity: 1, y: 0 }}
           className="fixed z-50  bg-white rounded-xl shadow-xl w-[22rem] h-[32rem] bottom-16 right-6"
         >
@@ -215,7 +217,11 @@ export function Footer() {
                   </span>
                 )}
               </div>
-              <a target="__blank" className="mt-1.5 text-2xl ms-4 click" href="https://wa.me/351935913073">
+              <a
+                target="__blank"
+                className="mt-1.5 text-2xl ms-4 click"
+                href="https://wa.me/351935913073"
+              >
                 <FaWhatsapp />
               </a>
             </div>
@@ -255,7 +261,8 @@ export function Footer() {
             />
             <span
               onClick={() => (msg ? handleSendMessage(msg) : null)}
-              className="px-3 outline-none py-3 mb-3 -mt-[1px] font-bold rounded-lg click active:border-primary active:bg-transparent border bg-primary text-white "
+              className="px-3 
+              outline-none py-3 mb-3 -mt-[1px] font-bold rounded-lg click active:border-primary active:bg-transparent border bg-primary text-white "
             >
               <BsSend className="my-auto" />
             </span>
