@@ -4,15 +4,15 @@ import "./index.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home, NotFound, Contact, PortFolio } from "./presentation/pages";
 import { Preloader } from "./presentation/components";
-import CookieConsent from "react-cookie-consent";
-import Cookies from "js-cookie";
-import { useTranslation } from "react-i18next";
+//import CookieConsent from "react-cookie-consent";
+//import Cookies from "js-cookie";
+//import { useTranslation } from "react-i18next";
 
 const App: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [isLoading2, setIsLoading2] = useState(true);
 
-  const { t } = useTranslation();
+  //const { t } = useTranslation();
 
   // Configurando cookies úteis para SEO e desempenho
 
@@ -43,7 +43,10 @@ const App: React.FC = () => {
         </Routes>
       </BrowserRouter>
 
-      <CookieConsent
+      {/*
+
+
+        <CookieConsent
         location="bottom"
         buttonText="OK"
         cookieName="NerooEducacaoAngola"
@@ -61,6 +64,8 @@ const App: React.FC = () => {
       >
         {t("cookieText")}
       </CookieConsent>
+
+        */}
     </>
   );
 };
