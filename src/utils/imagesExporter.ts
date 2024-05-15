@@ -35,7 +35,7 @@ import m5 from "../assets/portfolio/mamadu/Atendimento e entrega op 02 4.png";
 import pic1 from "../assets/imgs/pics/photo-1494790108377-be9c29b29330.avif";
 import pic2 from "../assets/imgs/pics/photo-1544168190-79c17527004f.avif";
 import crisvan from "../assets/imgs/pics/Crisvan.png";
-import noemia from "../assets/imgs/pics/Noémia.png";
+import noemia from "../assets/imgs/pics/Noemia.png";
 import sergio from "../assets/imgs/pics/Sergio.png";
 import Anderson from "../assets/imgs/pics/Anderson.png";
 

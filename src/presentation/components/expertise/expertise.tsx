@@ -35,7 +35,7 @@ export function Expertise() {
             className="card-expertise"
           >
             <img src={regularIcons.web} className="h-[3em] md:h-[4em]" alt="" />
-            <h2 className="text-card-expertise">
+            <h2 className="text-card-expertise ">
               {t("expertise.websiteDesign")}
             </h2>
           </motion.div>
@@ -77,7 +77,7 @@ export function Expertise() {
             whileInView={{ opacity: 1, y: 0 }}
             className="w-full px-2 mx-auto text-center md:text-start"
           >
-            <h1 className="text-3xl font-bold text-white md:font-semibold lg:text-6xl">
+            <h1 className="text-3xl font-bold text-white md:font-bold lg:text-6xl">
               {t("expertise.pageTitle")}
             </h1>
             <p className="mt-6 mb-14 md:mb-1 text-md 2xl:text-xl text-secondary">
