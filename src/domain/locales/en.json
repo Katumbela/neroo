@@ -3,7 +3,7 @@
   "cookieText": "This website uses cookies to enhance your experience at our platform.",
   "servicesPageTitle": "Services",
   "latestWorksPageTitle": "Latest Works",
-  "testimonialsPageTitle": "Testimonials",
+  "testimonialsPageTitle": "Our Team",
   "contactPageTitle": "Contact Us",
   "contactText": "Contact Us",
   "hero":{
@@ -15,14 +15,14 @@
   "companiesTitle": "Brands",
   "companiesSubTitle": "Brands & Projects that trust us",
   "expertise": {
-    "pageTitle": "Our Digital Marketing Expertise",
-    "description":  "Don't leave your online presence to chance. At our digital marketing agency, we don't just transform brands, we elevate them. With tailor-made strategies and a team passionate about your vision, we are here to boost your online success.",
-    "seo": "Search Engine Optimization",
-    "websiteDesign": "Website design & development",
-    "videoEditing": "Video editing & Production",
-    "contentWriting": "Content Writing",
-    "socialMediaMarketing": "Social media Marketing",
-    "payPerClick": "Pay per click (PPC)"
+    "pageTitle": "Our Experience in Digital Marketing",
+    "description": "Discover our services and get the best experience and results for your business",
+    "seo": "Online Advertising Campaign",
+    "websiteDesign": "Web and Mobile Development",
+    "videoEditing": "Email Marketing & SEO",
+    "contentWriting": "Data Analysis and Reporting",
+    "socialMediaMarketing": "Social Media & Graphic Design",
+    "payPerClick": "Marketing Automation"
   },
   "why": {
     "title": "Why should you choose NEROO ?",
