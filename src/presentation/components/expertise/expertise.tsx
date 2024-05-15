@@ -46,7 +46,7 @@ export function Expertise() {
             className="card-expertise"
           >
             <img
-              src={regularIcons.video}
+              src={regularIcons.email}
               className="h-[3em] md:h-[4em]"
               alt=""
             />

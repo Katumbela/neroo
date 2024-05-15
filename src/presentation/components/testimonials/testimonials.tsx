@@ -1,7 +1,6 @@
 import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import user from "../../../assets/imgs/Pattern-fill-a10d0ecff0ddaba6c738546ff30db98b.jpg";
 import { pictures } from "../../../utils/imagesExporter";
 import { Section } from "../section/section";
 
@@ -42,15 +41,15 @@ export function Testimonials() {
     ],
   };
   */
- 
+
   const testimonials = [
     {
       id: 4,
-      img: user,
+      img: pictures.sergio,
       name: "Sérgio Mateus",
       content:
         "A Neroo realmente superou todas as nossas expectativas. Sua abordagem inovadora e criativa nos ajudou a alcançar um público totalmente novo, e sua equipe altamente profissional tornou todo o processo suave e eficiente.",
-      title: "CEO ",
+      title: "CEO & Conselheiro",
     },
     {
       id: 1,
@@ -62,24 +61,35 @@ export function Testimonials() {
     },
     {
       id: 2,
-      img: pictures.pic3,
-      name: "Crisvan",
+      img: pictures.crisvan,
+      name: "Crisvan Van-Dúnem",
       content:
         "Trabalhar com a Neroo foi uma experiência incrível. Eles têm uma compreensão profunda das tendências do mercado e foram capazes de desenvolver uma estratégia personalizada que impulsionou nosso crescimento exponencialmente.",
       title: "Dr. de arte e UI/UX Design",
     },
     {
       id: 3,
-      img: pictures.pic1,
+      img: pictures.noemia,
       name: "Noémia Fernandes ",
       content:
         "Trabalhar com a Neroo foi uma experiência incrível. Eles têm uma compreensão profunda das tendências do mercado e foram capazes de desenvolver uma estratégia personalizada que impulsionou nosso crescimento exponencialmente.",
       title: "Social Mídea e Gest. de Tráfego pago",
     },
+    {
+      id: 4,
+      img: pictures.Anderson,
+      name: "Anderson Fernandes ",
+      content:
+        "Trabalhar com a Neroo foi uma experiência incrível. Eles têm uma compreensão profunda das tendências do mercado e foram capazes de desenvolver uma estratégia personalizada que impulsionou nosso crescimento exponencialmente.",
+      title: "Dr. Comercial",
+    },
   ];
 
   return (
-    <div id="testimonials" className="flex flex-wrap justify-center gap-8 px-6 py-16 mx-auto my-16 md:px-1">
+    <div
+      id="testimonials"
+      className="flex flex-wrap justify-center gap-8 px-6 py-16 mx-auto my-16 md:px-1"
+    >
       {/*
 
 <Slider {...settings}>

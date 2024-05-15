@@ -4,6 +4,7 @@ import linkedin from "../assets/icons/brands/linkedin.png";
 import nyt from "../assets/icons/brands/new-york-times.png";
 import web from "../assets/icons/regular/Icon (1).png";
 import video from "../assets/icons/regular/Icon (2).png";
+import email from "../assets/icons/regular/Frame.png";
 import content from "../assets/icons/regular/Icon (3).png";
 import social from "../assets/icons/regular/Icon (4).png";
 import pay from "../assets/icons/regular/Icon (5).png";
@@ -33,9 +34,10 @@ import m4 from "../assets/portfolio/mamadu/Atendimento e entrega op 02 3.png";
 import m5 from "../assets/portfolio/mamadu/Atendimento e entrega op 02 4.png";
 import pic1 from "../assets/imgs/pics/photo-1494790108377-be9c29b29330.avif";
 import pic2 from "../assets/imgs/pics/photo-1544168190-79c17527004f.avif";
-import pic3 from "../assets/imgs/pics/photo-1566753323558-f4e0952af115.avif";
-import pic5 from "../assets/imgs/pics/Captura de ecrã 2024-05-03 112810.png";
-import pic4 from "../assets/imgs/pics/portrait-father-his-backyard_23-2149489567.avif";
+import crisvan from "../assets/imgs/pics/Crisvan.png";
+import noemia from "../assets/imgs/pics/Noémia.png";
+import sergio from "../assets/imgs/pics/Sergio.png";
+import Anderson from "../assets/imgs/pics/Anderson.png";
 
 export const brands = {
   allianz,
@@ -48,6 +50,7 @@ export const regularIcons: Record<string, string> = {
   video,
   content,
   social,
+  email,
   search,
   pay,
   web,
@@ -95,9 +98,10 @@ export const mamadu = {
 export const pictures = {
   pic1,
   pic2,
-  pic3,
-  pic5,
-  pic4,
+  crisvan,
+  noemia,
+  sergio,
+  Anderson,
   user,
   emmanuel,
 };
